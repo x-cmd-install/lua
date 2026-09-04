@@ -7,7 +7,7 @@ about:
   head: 7579fc9
   archived: false
   latestVersion: v5.5.1
-  collectedAt: 2026-09-04T19:27:31Z
+  collectedAt: 2026-09-04T21:03:56Z
 timeline:
   created: 2012-09-14
   lastCommit: 2026-07-23
@@ -82,6 +82,39 @@ total:
   openIssue: 0
   commit: 5855
 ---
+path: /home/runner/.x-repo/github.com/lua/lua
+collectedAt: 2026-09-04T21:03:58Z
+loc:
+  C:
+    code: 20312
+    comments: 4261
+    blanks: 3663
+    files: 40
+  Lua:
+    code: 13680
+    comments: 1183
+    blanks: 3182
+    files: 34
+  CHeader:
+    code: 2763
+    comments: 1716
+    blanks: 1467
+    files: 28
+  Makefile:
+    code: 155
+    comments: 49
+    blanks: 47
+    files: 2
+  Markdown:
+    code: 0
+    comments: 4
+    blanks: 3
+    files: 1
+total:
+  code: 36910
+  comments: 7213
+  blanks: 8362
+  files: 105
 ---
 date: "2026-08-24"
 repo:
