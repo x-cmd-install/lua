@@ -5,13 +5,13 @@ about:
   head: 7579fc9
   archived: false
   latestVersion: "v5.5.1"
-  collectedAt: 2026-09-07T04:15:53Z
+  collectedAt: 2026-09-07T20:07:03Z
 timeline:
   created: 2012-09-14
   lastCommit: 2026-07-23
   lastRelease: 2026-08-05
 popularity:
-  star: 10287
+  star: 10289
   watcher: 411
   fork: 1985
   release: 128
@@ -81,7 +81,7 @@ total:
   commit: 5855
 ---
 path: /home/runner/.x-repo/github.com/lua/lua
-collectedAt: 2026-09-07T04:15:55Z
+collectedAt: 2026-09-07T20:07:05Z
 loc:
   C:
     code: 20312
@@ -190,7 +190,7 @@ checks:
       - 'Warn: branch protection not enabled for branch ''master'''
 ---
 eget:
-  collectedAt: 2026-09-07T04:15:56+00:00
+  collectedAt: 2026-09-07T20:07:06+00:00
   platform:
     darwin/arm64:
       name:  null
