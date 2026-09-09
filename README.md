@@ -7,7 +7,7 @@ A copy of the Lua development repository, as seen by the Lua team. Mirrored irre
 - **Latest release**: `v5.5.1` (2026-08-05)
 - **Last commit**: 2026-07-23
 - **License**: NOASSERTION
-- **Stars**: 10288 · **Forks**: 1985 · **Open issues**: 0 · **Contributors**: 6
+- **Stars**: 10290 · **Forks**: 1985 · **Open issues**: 0 · **Contributors**: 6
 
 ## Installation
 
@@ -21,4 +21,4 @@ See <https://x-cmd.com/install/lua> for details.
 
 This mirror is auto-maintained by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action). Latest card snapshot: `data/card/260909.yml`. Merged card+release view: `data/latest.report.yml`.
 
-_Last regenerated: 2026-09-09T04:22:55Z._
+_Last regenerated: 2026-09-09T18:32:11Z._
