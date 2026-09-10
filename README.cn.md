@@ -4,7 +4,7 @@
 
 A copy of the Lua development repository, as seen by the Lua team. Mirrored irregularly. All communication should be through the Lua mailing list https://www.lua.org/lua-l.html
 
-![lua](https://repo.x-cmd.io/lua.svg)
+![lua](https://repo.x-cmd.io/lua.svg?lang=zh)
 
 ## 安装
 
@@ -22,11 +22,10 @@ x install lua
 
 - **最新版本**: `v5.5.1` (2026-08-05)
 - **最近提交**: 2026-07-23
-- **发布时间**: 2026-08-05T14:00:59Z
 
 ## 流行度
 
-- **Star**: 10,291 · **Fork**: 1,985 · **开放 issue**: 0 · **贡献者**: 6
+- **Star**: 10,290 · **Fork**: 1,987 · **开放 issue**: 0 · **贡献者**: 6
 
 ## 累计统计
 
@@ -71,4 +70,4 @@ lua 的安装元数据由 [x-cmd/install](https://github.com/x-cmd/install) 索�
 
 本页面的数据（card / loc / scorecard / release）由 [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) 自动采集，每日重新生成。**安装行为**（版本选择、平台差异、依赖处理）的改进应提交到上游索引。
 
-_数据快照: `data/card/260910.yml` · 2026-09-10T04:19:49Z._
+_数据快照: `data/card/260910.yml` · 2026-09-10T15:57:46Z._
