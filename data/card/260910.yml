@@ -7,7 +7,7 @@ about:
   latestVersion: "v5.5.1"
   latestRelease: "v5.5.1"
   latestPrerelease: "5.3.3-rc3"
-  collectedAt: 2026-09-10T21:21:44Z
+  collectedAt: 2026-09-10T21:53:03Z
 timeline:
   created: 2012-09-14
   lastCommit: 2026-07-23
@@ -85,7 +85,7 @@ total:
   commit: 5855
 ---
 path: /home/runner/.x-repo/github.com/lua/lua
-collectedAt: 2026-09-10T21:21:48Z
+collectedAt: 2026-09-10T21:53:05Z
 loc:
   C:
     code: 20312
