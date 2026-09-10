@@ -43,8 +43,8 @@
   "body": "Lua release 5.5.1",
   "reactions": {
     "url": "https://api.github.com/repos/lua/lua/releases/365569501/reactions",
-    "total_count": 47,
-    "+1": 16,
+    "total_count": 48,
+    "+1": 17,
     "-1": 0,
     "laugh": 0,
     "hooray": 14,
