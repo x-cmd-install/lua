@@ -66,7 +66,7 @@ x install lua
 
 ## 发行版状态
 
-在 [repology.org](https://repology.org/project/lua) 上共有 **818** 个发行版报告此项目。**39** 个 ✅ 已是最新上游版本，**261** 个 ⚠️ 使用旧版本。
+在 [repology.org](https://repology.org/project/lua) 上共有 **817** 个发行版报告此项目。**39** 个 ✅ 已是最新上游版本，**260** 个 ⚠️ 使用旧版本。
 
 | 发行版 | 版本 | 状态 |
 |--------|------|------|
@@ -75,12 +75,12 @@ x install lua
 | Debian 13 | `5.4.7` | ⚠️ outdated |
 | Ubuntu 26.04 LTS | `5.5.0` | ⚠️ outdated |
 | Ubuntu 24.04 LTS | `5.4.6` | ⚠️ outdated |
-| Arch | `5.5.1` | ✅ latest |
+| Arch | `5.4.9` | 🪦 legacy |
 | Homebrew | `5.5.1` | ✅ latest |
 | Fedora rawhide | `5.5.1` | ✅ latest |
 | Nix unstable | `5.4.7` | ⚠️ outdated |
 | Void | `5.4.8` | ⚠️ outdated |
-| Alpine edge | `5.5.1` | ✅ latest |
+| Alpine edge | `5.4.9` | 🪦 legacy |
 | openSUSE Tumbleweed | `5.4.8` | ⚠️ outdated |
 
 ## 改进这些数据
@@ -92,4 +92,4 @@ lua 的安装元数据由 [x-cmd/install](https://github.com/x-cmd/install) 索�
 
 本页面的数据（card / loc / scorecard / release）由 [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) 自动采集，每日重新生成。**安装行为**（版本选择、平台差异、依赖处理）的改进应提交到上游索引。
 
-_数据快照: `data/card/260911.yml` · 2026-09-11T04:19:23Z._
+_数据快照: `data/card/260911.yml` · 2026-09-11T18:19:29Z._

@@ -66,7 +66,7 @@ Lowest-scoring checks:
 
 ## Distribution status
 
-Reported by **818** distros on [repology.org](https://repology.org/project/lua). **39** are ✅ on the latest upstream release, **261** are ⚠️ on an older version.
+Reported by **817** distros on [repology.org](https://repology.org/project/lua). **39** are ✅ on the latest upstream release, **260** are ⚠️ on an older version.
 
 | Distro | Version | Status |
 |--------|---------|--------|
@@ -75,12 +75,12 @@ Reported by **818** distros on [repology.org](https://repology.org/project/lua).
 | Debian 13 | `5.4.7` | ⚠️ outdated |
 | Ubuntu 26.04 LTS | `5.5.0` | ⚠️ outdated |
 | Ubuntu 24.04 LTS | `5.4.6` | ⚠️ outdated |
-| Arch | `5.5.1` | ✅ latest |
+| Arch | `5.4.9` | 🪦 legacy |
 | Homebrew | `5.5.1` | ✅ latest |
 | Fedora rawhide | `5.5.1` | ✅ latest |
 | Nix unstable | `5.4.7` | ⚠️ outdated |
 | Void | `5.4.8` | ⚠️ outdated |
-| Alpine edge | `5.5.1` | ✅ latest |
+| Alpine edge | `5.4.9` | 🪦 legacy |
 | openSUSE Tumbleweed | `5.4.8` | ⚠️ outdated |
 
 ## Improve this data
@@ -92,4 +92,4 @@ Install metadata for lua lives in the [x-cmd/install](https://github.com/x-cmd/i
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/260911.yml` · 2026-09-11T04:19:22Z._
+_Snapshot: `data/card/260911.yml` · 2026-09-11T18:19:27Z._
