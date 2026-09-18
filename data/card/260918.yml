@@ -193,4 +193,3 @@ checks:
     details:
       - 'Warn: branch protection not enabled for branch ''master'''
 ---
-{"id":365569501,"author":{"login":"roberto-ieru","id":16293687,"node_id":"MDQ6VXNlcjE2MjkzNjg3","gravatar_id":"","type":"User","user_view_type":"public","site_admin":false},"node_id":"RE_kwDOAFiUyM4VyiXd","tag_name":"v5.5.1","target_commitish":"master","name":"Lua 5.5.1","draft":false,"immutable":false,"prerelease":false,"created_at":"2026-07-23T16:58:30Z","updated_at":"2026-08-05T14:00:59Z","published_at":"2026-08-05T14:00:59Z","assets":[],"body":"Lua release 5.5.1","reactions":{"total_count":48,"+1":17,"-1":0,"laugh":0,"hooray":14,"confused":0,"heart":13,"rocket":1,"eyes":3}}
