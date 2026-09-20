@@ -4,7 +4,7 @@
 
 A copy of the Lua development repository, as seen by the Lua team. Mirrored irregularly. All communication should be through the Lua mailing list https://www.lua.org/lua-l.html
 
-![lua](https://repo.x-cmd.io/lua.svg)
+[![x-cmd/install — lua Code Quality Monitoring Repo Card](https://repo.x-cmd.io/lua.svg)](https://x-cmd.com/install/lua)
 
 ## Install
 
@@ -47,7 +47,7 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 10,315 · **Forks**: 1,990 · **Open issues**: 0 · **Contributors**: 6
+- **Stars**: 10,323 · **Forks**: 1,991 · **Open issues**: 0 · **Contributors**: 6
 
 ## Totals (cumulative)
 
@@ -57,12 +57,12 @@ Lowest-scoring checks:
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-19 | 0 | 0 | 0 | 0 | 0 | 6 |
-| last60d | 2026-07-20 | 1 | 0 | 0 | 0 | 0 | 8 |
-| 90d | 2026-06-20 | 1 | 0 | 0 | 0 | 0 | 12 |
-| last180d | 2026-03-22 | 1 | 0 | 0 | 0 | 0 | 27 |
-| 360d | 2025-09-23 | 2 | 0 | 0 | 0 | 0 | 71 |
-| last720d | 2024-09-28 | 3 | 0 | 0 | 0 | 0 | 218 |
+| 30d | 2026-08-21 | 0 | 0 | 0 | 0 | 0 | 6 |
+| last60d | 2026-07-22 | 1 | 0 | 0 | 0 | 0 | 8 |
+| 90d | 2026-06-22 | 1 | 0 | 0 | 0 | 0 | 12 |
+| last180d | 2026-03-24 | 1 | 0 | 0 | 0 | 0 | 27 |
+| 360d | 2025-09-25 | 2 | 0 | 0 | 0 | 0 | 71 |
+| last720d | 2024-09-30 | 3 | 0 | 0 | 0 | 0 | 218 |
 
 ## Improve this data
 
@@ -73,4 +73,4 @@ Install metadata for lua lives in the [x-cmd/install](https://github.com/x-cmd/i
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/260918.yml` · 2026-09-18T04:23:47Z._
+_Snapshot: `data/card/260920.yml` · 2026-09-20T04:39:19Z._
