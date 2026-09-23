@@ -4,7 +4,7 @@
 
 A copy of the Lua development repository, as seen by the Lua team. Mirrored irregularly. All communication should be through the Lua mailing list https://www.lua.org/lua-l.html
 
-[![x-cmd/install — lua Code Quality Monitoring Repo Card](https://repo.x-cmd.io/lua.svg)](https://x-cmd.com/install/lua)
+[![x-cmd/install — lua Code Quality Monitoring Repo Card](https://x-cmd.com/repo-card/lua.svg)](https://x-cmd.com/install/lua)
 
 ## Install
 
@@ -47,7 +47,7 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 10,326 · **Forks**: 1,989 · **Open issues**: 0 · **Contributors**: 6
+- **Stars**: 10,330 · **Forks**: 1,990 · **Open issues**: 0 · **Contributors**: 6
 
 ## Totals (cumulative)
 
@@ -57,12 +57,12 @@ Lowest-scoring checks:
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-23 | 0 | 0 | 0 | 0 | 0 | 6 |
-| last60d | 2026-07-24 | 1 | 0 | 0 | 0 | 0 | 6 |
-| 90d | 2026-06-24 | 1 | 0 | 0 | 0 | 0 | 12 |
-| last180d | 2026-03-26 | 1 | 0 | 0 | 0 | 0 | 27 |
-| 360d | 2025-09-27 | 2 | 0 | 0 | 0 | 0 | 71 |
-| last720d | 2024-10-02 | 3 | 0 | 0 | 0 | 0 | 217 |
+| 30d | 2026-08-24 | 0 | 0 | 0 | 0 | 0 | 6 |
+| last60d | 2026-07-25 | 1 | 0 | 0 | 0 | 0 | 6 |
+| 90d | 2026-06-25 | 1 | 0 | 0 | 0 | 0 | 12 |
+| last180d | 2026-03-27 | 1 | 0 | 0 | 0 | 0 | 27 |
+| 360d | 2025-09-28 | 2 | 0 | 0 | 0 | 0 | 71 |
+| last720d | 2024-10-03 | 3 | 0 | 0 | 0 | 0 | 217 |
 
 ## Improve this data
 
@@ -73,4 +73,4 @@ Install metadata for lua lives in the [x-cmd/install](https://github.com/x-cmd/i
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/260922.yml` · 2026-09-22T04:33:49Z._
+_Snapshot: `data/card/260923.yml` · 2026-09-23T04:30:14Z._
