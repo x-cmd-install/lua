@@ -14,12 +14,12 @@ x install lua
 
 ## Code insight
 
-Total: **36,960** lines of code across **105** files in the top 5 languages.
+Total: **36,979** lines of code across **105** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
-| C | 20,321 | 4,265 | 3,663 | 40 |
-| Lua | 13,720 | 1,204 | 3,202 | 34 |
+| C | 20,330 | 4,274 | 3,665 | 40 |
+| Lua | 13,730 | 1,210 | 3,204 | 34 |
 | CHeader | 2,764 | 1,716 | 1,467 | 28 |
 | Makefile | 155 | 49 | 47 | 2 |
 | Markdown | 0 | 4 | 3 | 1 |
@@ -43,26 +43,26 @@ Lowest-scoring checks:
 ## Release
 
 - **Latest**: `v5.5.1` (2026-08-05)
-- **Last commit**: 2026-10-12
+- **Last commit**: 2026-10-16
 
 ## Popularity
 
-- **Stars**: 10,378 · **Forks**: 2,011 · **Open issues**: 0 · **Contributors**: 6
+- **Stars**: 10,382 · **Forks**: 2,010 · **Open issues**: 0 · **Contributors**: 6
 
 ## Totals (cumulative)
 
-- **Releases**: 128 · **Merged PRs**: 0 · **Open PRs**: 0 · **Closed issues**: 0 · **Open issues**: 0 · **Commits**: 5866
+- **Releases**: 128 · **Merged PRs**: 0 · **Open PRs**: 0 · **Closed issues**: 0 · **Open issues**: 0 · **Commits**: 5868
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-09-16 | 0 | 0 | 0 | 0 | 0 | 5 |
-| last60d | 2026-08-17 | 0 | 0 | 0 | 0 | 0 | 11 |
-| 90d | 2026-07-18 | 1 | 0 | 0 | 0 | 0 | 14 |
-| last180d | 2026-04-19 | 1 | 0 | 0 | 0 | 0 | 27 |
-| 360d | 2025-10-21 | 2 | 0 | 0 | 0 | 0 | 69 |
-| last720d | 2024-10-26 | 3 | 0 | 0 | 0 | 0 | 216 |
+| 30d | 2026-09-17 | 0 | 0 | 0 | 0 | 0 | 7 |
+| last60d | 2026-08-18 | 0 | 0 | 0 | 0 | 0 | 13 |
+| 90d | 2026-07-19 | 1 | 0 | 0 | 0 | 0 | 16 |
+| last180d | 2026-04-20 | 1 | 0 | 0 | 0 | 0 | 29 |
+| 360d | 2025-10-22 | 2 | 0 | 0 | 0 | 0 | 71 |
+| last720d | 2024-10-27 | 3 | 0 | 0 | 0 | 0 | 218 |
 
 ## Improve this data
 
@@ -73,4 +73,4 @@ Install metadata for lua lives in the [x-cmd/install](https://github.com/x-cmd/i
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261016.yml` · 2026-10-16T04:14:29Z._
+_Snapshot: `data/card/261017.yml` · 2026-10-17T04:04:35Z._
