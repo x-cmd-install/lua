@@ -26,13 +26,13 @@ x install lua
 
 ## OpenSSF Scorecard 评分
 
-总评分: **3.7 / 10**
+总评分: **4 / 10**
 
 评分最低的几项:
 
-- **Token-Permissions** (-1/10) — No tokens found
-- **SAST** (0/10) — no SAST tool detected
 - **Packaging** (-1/10) — packaging workflow not detected
+- **Code-Review** (0/10) — Found 0/30 approved changesets -- score normalized to 0
+- **Token-Permissions** (-1/10) — No tokens found
 
 ## 源代码
 
@@ -47,7 +47,7 @@ x install lua
 
 ## 流行度
 
-- **Star**: 10,389 · **Fork**: 2,020 · **开放 issue**: 0 · **贡献者**: 6
+- **Star**: 10,392 · **Fork**: 2,023 · **开放 issue**: 0 · **贡献者**: 6
 
 ## 累计统计
 
@@ -57,12 +57,12 @@ x install lua
 
 | 时间窗口 | 起始 | 发布 | 已合并 PR | 开放 PR | 已关闭 issue | 开放 issue | 提交 |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-09-21 | 0 | 0 | 0 | 0 | 0 | 7 |
-| last60d | 2026-08-22 | 0 | 0 | 0 | 0 | 0 | 13 |
-| 90d | 2026-07-23 | 1 | 0 | 0 | 0 | 0 | 13 |
-| last180d | 2026-04-24 | 1 | 0 | 0 | 0 | 0 | 25 |
-| 360d | 2025-10-26 | 2 | 0 | 0 | 0 | 0 | 70 |
-| last720d | 2024-10-31 | 3 | 0 | 0 | 0 | 0 | 216 |
+| 30d | 2026-09-22 | 0 | 0 | 0 | 0 | 0 | 7 |
+| last60d | 2026-08-23 | 0 | 0 | 0 | 0 | 0 | 13 |
+| 90d | 2026-07-24 | 1 | 0 | 0 | 0 | 0 | 13 |
+| last180d | 2026-04-25 | 1 | 0 | 0 | 0 | 0 | 25 |
+| 360d | 2025-10-27 | 2 | 0 | 0 | 0 | 0 | 70 |
+| last720d | 2024-11-01 | 3 | 0 | 0 | 0 | 0 | 216 |
 
 ## 改进这些数据
 
@@ -73,4 +73,4 @@ lua 的安装元数据由 [x-cmd/install](https://github.com/x-cmd/install) 索�
 
 本页面的数据（card / loc / scorecard / release）由 [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) 自动采集，每日重新生成。**安装行为**（版本选择、平台差异、依赖处理）的改进应提交到上游索引。
 
-_数据快照: `data/card/261021.yml` · 2026-10-21T04:24:33Z._
+_数据快照: `data/card/261022.yml` · 2026-10-22T04:23:29Z._
