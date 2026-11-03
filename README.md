@@ -47,7 +47,7 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 10,414 · **Forks**: 2,018 · **Open issues**: 0 · **Contributors**: 6
+- **Stars**: 10,417 · **Forks**: 2,018 · **Open issues**: 0 · **Contributors**: 6
 
 ## Totals (cumulative)
 
@@ -57,16 +57,16 @@ Lowest-scoring checks:
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-03 | 0 | 0 | 0 | 0 | 0 | 6 |
-| last60d | 2026-09-03 | 0 | 0 | 0 | 0 | 0 | 12 |
-| 90d | 2026-08-04 | 1 | 0 | 0 | 0 | 0 | 13 |
-| last180d | 2026-05-06 | 1 | 0 | 0 | 0 | 0 | 22 |
-| 360d | 2025-11-07 | 2 | 0 | 0 | 0 | 0 | 63 |
-| last720d | 2024-11-12 | 3 | 0 | 0 | 0 | 0 | 216 |
+| 30d | 2026-10-04 | 0 | 0 | 0 | 0 | 0 | 6 |
+| last60d | 2026-09-04 | 0 | 0 | 0 | 0 | 0 | 12 |
+| 90d | 2026-08-05 | 1 | 0 | 0 | 0 | 0 | 13 |
+| last180d | 2026-05-07 | 1 | 0 | 0 | 0 | 0 | 22 |
+| 360d | 2025-11-08 | 2 | 0 | 0 | 0 | 0 | 63 |
+| last720d | 2024-11-13 | 3 | 0 | 0 | 0 | 0 | 216 |
 
 ## Distribution status
 
-Reported by **798** distros on [repology.org](https://repology.org/project/lua). **51** are ✅ on the latest upstream release, **227** are ⚠️ on an older version.
+Reported by **796** distros on [repology.org](https://repology.org/project/lua). **49** are ✅ on the latest upstream release, **229** are ⚠️ on an older version.
 
 | Distro | Version | Status |
 |--------|---------|--------|
@@ -75,7 +75,7 @@ Reported by **798** distros on [repology.org](https://repology.org/project/lua).
 | Debian 13 | `5.4.7` | ⚠️ outdated |
 | Ubuntu 26.04 LTS | `5.5.0` | ⚠️ outdated |
 | Ubuntu 24.04 LTS | `5.4.6` | ⚠️ outdated |
-| Arch | `5.4.9` | 🪦 legacy |
+| Arch | `5.5.1` | ✅ latest |
 | Homebrew | `5.5.1` | ✅ latest |
 | Fedora rawhide | `5.5.1` | ✅ latest |
 | Nix unstable | `5.4.9` | 🪦 legacy |
@@ -92,4 +92,4 @@ Install metadata for lua lives in the [x-cmd/install](https://github.com/x-cmd/i
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261102.yml` · 2026-11-02T05:42:02Z._
+_Snapshot: `data/card/261103.yml` · 2026-11-03T06:23:18Z._
