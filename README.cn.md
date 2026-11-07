@@ -47,7 +47,7 @@ x install lua
 
 ## 流行度
 
-- **Star**: 10,423 · **Fork**: 2,020 · **开放 issue**: 0 · **贡献者**: 6
+- **Star**: 10,425 · **Fork**: 2,021 · **开放 issue**: 0 · **贡献者**: 6
 
 ## 累计统计
 
@@ -57,16 +57,16 @@ x install lua
 
 | 时间窗口 | 起始 | 发布 | 已合并 PR | 开放 PR | 已关闭 issue | 开放 issue | 提交 |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-07 | 0 | 0 | 0 | 0 | 0 | 6 |
-| last60d | 2026-09-07 | 0 | 0 | 0 | 0 | 0 | 12 |
-| 90d | 2026-08-08 | 0 | 0 | 0 | 0 | 0 | 13 |
-| last180d | 2026-05-10 | 1 | 0 | 0 | 0 | 0 | 22 |
-| 360d | 2025-11-11 | 2 | 0 | 0 | 0 | 0 | 63 |
-| last720d | 2024-11-16 | 3 | 0 | 0 | 0 | 0 | 209 |
+| 30d | 2026-10-08 | 0 | 0 | 0 | 0 | 0 | 6 |
+| last60d | 2026-09-08 | 0 | 0 | 0 | 0 | 0 | 12 |
+| 90d | 2026-08-09 | 0 | 0 | 0 | 0 | 0 | 13 |
+| last180d | 2026-05-11 | 1 | 0 | 0 | 0 | 0 | 22 |
+| 360d | 2025-11-12 | 2 | 0 | 0 | 0 | 0 | 63 |
+| last720d | 2024-11-17 | 3 | 0 | 0 | 0 | 0 | 208 |
 
 ## 发行版状态
 
-在 [repology.org](https://repology.org/project/lua) 上共有 **796** 个发行版报告此项目。**49** 个 ✅ 已是最新上游版本，**229** 个 ⚠️ 使用旧版本。
+在 [repology.org](https://repology.org/project/lua) 上共有 **801** 个发行版报告此项目。**52** 个 ✅ 已是最新上游版本，**226** 个 ⚠️ 使用旧版本。
 
 | 发行版 | 版本 | 状态 |
 |--------|------|------|
@@ -75,10 +75,10 @@ x install lua
 | Debian 13 | `5.4.7` | ⚠️ outdated |
 | Ubuntu 26.04 LTS | `5.5.0` | ⚠️ outdated |
 | Ubuntu 24.04 LTS | `5.4.6` | ⚠️ outdated |
-| Arch | `5.5.1` | ✅ latest |
+| Arch | `5.4.9` | 🪦 legacy |
 | Homebrew | `5.5.1` | ✅ latest |
 | Fedora rawhide | `5.5.1` | ✅ latest |
-| Nix unstable | `5.4.9` | 🪦 legacy |
+| Nix unstable | `0.10.31` | 🪦 legacy |
 | Void | `5.4.9` | 🪦 legacy |
 | Alpine edge | `5.4.9` | 🪦 legacy |
 | openSUSE Tumbleweed | `5.4.8` | ⚠️ outdated |
@@ -92,4 +92,4 @@ lua 的安装元数据由 [x-cmd/install](https://github.com/x-cmd/install) 索�
 
 本页面的数据（card / loc / scorecard / release）由 [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) 自动采集，每日重新生成。**安装行为**（版本选择、平台差异、依赖处理）的改进应提交到上游索引。
 
-_数据快照: `data/card/261106.yml` · 2026-11-06T06:14:34Z._
+_数据快照: `data/card/261107.yml` · 2026-11-07T05:41:44Z._
