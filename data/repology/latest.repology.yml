@@ -1,3 +1,37 @@
+- repo: carbs
+  subrepo: community
+  srcname: lua
+  visiblename: lua
+  version: 5.4.7
+  origversion: null
+  status: outdated
+  summary: Lua programming language
+  maintainers:
+    - cem@carbslinux.org
+  licenses:
+    - MIT
+- repo: ptxdist
+  srcname: lua
+  visiblename: lua
+  version: 5.5.1
+  origversion: null
+  status: newest
+  licenses:
+    - MIT
+- repo: aix_osp
+  srcname: lua
+  visiblename: lua
+  version: 5.2.3
+  origversion: 5.2.3-1
+  status: legacy
+  vulnerable: true
+- repo: aix_osp
+  srcname: lua
+  visiblename: lua
+  version: 5.3.3
+  origversion: 5.3.3-1
+  status: legacy
+  vulnerable: true
 - repo: aixtoolbox
   srcname: lua
   visiblename: lua
@@ -9,39 +43,6 @@
     - MIT
   categories:
     - Development/Languages
-- repo: manjaro_testing
-  subrepo: extra
-  srcname: lua
-  binname: lua
-  visiblename: lua
-  version: 5.4.6
-  origversion: 5.4.6-2
-  status: outdated
-  summary: Powerful lightweight programming language designed for extending applications
-  licenses:
-    - MIT
-- repo: manjaro_unstable
-  subrepo: extra
-  srcname: lua54
-  binname: lua54
-  visiblename: lua54
-  version: 5.4.9
-  origversion: 5.4.9-1
-  status: legacy
-  summary: Powerful lightweight programming language designed for extending applications
-  licenses:
-    - MIT
-- repo: manjaro_unstable
-  subrepo: extra
-  srcname: lua
-  binname: lua
-  visiblename: lua
-  version: 5.5.1
-  origversion: 5.5.1-1
-  status: newest
-  summary: Powerful lightweight programming language designed for extending applications
-  licenses:
-    - MIT
 - repo: aerynos
   srcname: lua
   visiblename: lua
@@ -116,373 +117,423 @@
     - ncopa@alpinelinux.org
   licenses:
     - MIT
-- repo: devuan_unstable
-  subrepo: unstable/main
+- repo: alpine_3_18
+  subrepo: main
   srcname: lua5.4
-  binnames:
-    - lua5.4
-    - liblua5.4-dev
-    - liblua5.4-0
+  binname: lua5.4
+  visiblename: lua5.4
+  version: 5.4.6
+  origversion: 5.4.6-r0
+  status: outdated
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_18
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-dbg
+  visiblename: lua5.4-dbg
+  version: 5.4.6
+  origversion: 5.4.6-r0
+  status: outdated
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_18
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-dev
+  visiblename: lua5.4-dev
+  version: 5.4.6
+  origversion: 5.4.6-r0
+  status: outdated
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_18
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-doc
+  visiblename: lua5.4-doc
+  version: 5.4.6
+  origversion: 5.4.6-r0
+  status: outdated
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_18
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-libs
+  visiblename: lua5.4-libs
+  version: 5.4.6
+  origversion: 5.4.6-r0
+  status: outdated
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_19
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4
+  visiblename: lua5.4
+  version: 5.4.6
+  origversion: 5.4.6-r1
+  status: outdated
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_19
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-dbg
+  visiblename: lua5.4-dbg
+  version: 5.4.6
+  origversion: 5.4.6-r1
+  status: outdated
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_19
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-dev
+  visiblename: lua5.4-dev
+  version: 5.4.6
+  origversion: 5.4.6-r1
+  status: outdated
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_19
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-doc
+  visiblename: lua5.4-doc
+  version: 5.4.6
+  origversion: 5.4.6-r1
+  status: outdated
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_19
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-libs
+  visiblename: lua5.4-libs
+  version: 5.4.6
+  origversion: 5.4.6-r1
+  status: outdated
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_22
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4
+  visiblename: lua5.4
+  version: 5.4.7
+  origversion: 5.4.7-r0
+  status: outdated
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_20
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4
+  visiblename: lua5.4
+  version: 5.4.6
+  origversion: 5.4.6-r1
+  status: outdated
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_20
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-dbg
+  visiblename: lua5.4-dbg
+  version: 5.4.6
+  origversion: 5.4.6-r1
+  status: outdated
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_20
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-dev
+  visiblename: lua5.4-dev
+  version: 5.4.6
+  origversion: 5.4.6-r1
+  status: outdated
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_20
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-doc
+  visiblename: lua5.4-doc
+  version: 5.4.6
+  origversion: 5.4.6-r1
+  status: outdated
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_20
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-libs
+  visiblename: lua5.4-libs
+  version: 5.4.6
+  origversion: 5.4.6-r1
+  status: outdated
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: arch
+  subrepo: extra
+  srcname: lua54
+  binname: lua54
+  visiblename: lua54
+  version: 5.4.9
+  origversion: 5.4.9-1
+  status: legacy
+  summary: Powerful lightweight programming language designed for extending applications
+  licenses:
+    - MIT
+- repo: alpine_3_21
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4
+  visiblename: lua5.4
+  version: 5.4.7
+  origversion: 5.4.7-r0
+  status: outdated
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_21
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-dbg
+  visiblename: lua5.4-dbg
+  version: 5.4.7
+  origversion: 5.4.7-r0
+  status: outdated
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_21
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-dev
+  visiblename: lua5.4-dev
+  version: 5.4.7
+  origversion: 5.4.7-r0
+  status: outdated
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_21
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-doc
+  visiblename: lua5.4-doc
+  version: 5.4.7
+  origversion: 5.4.7-r0
+  status: outdated
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_21
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-libs
+  visiblename: lua5.4-libs
+  version: 5.4.7
+  origversion: 5.4.7-r0
+  status: outdated
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_22
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-dbg
+  visiblename: lua5.4-dbg
+  version: 5.4.7
+  origversion: 5.4.7-r0
+  status: outdated
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_22
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-dev
+  visiblename: lua5.4-dev
+  version: 5.4.7
+  origversion: 5.4.7-r0
+  status: outdated
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_22
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-doc
+  visiblename: lua5.4-doc
+  version: 5.4.7
+  origversion: 5.4.7-r0
+  status: outdated
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_22
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-libs
+  visiblename: lua5.4-libs
+  version: 5.4.7
+  origversion: 5.4.7-r0
+  status: outdated
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_23
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4
+  visiblename: lua5.4
+  version: 5.4.8
+  origversion: 5.4.8-r0
+  status: outdated
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_23
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-dbg
+  visiblename: lua5.4-dbg
+  version: 5.4.8
+  origversion: 5.4.8-r0
+  status: outdated
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_23
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-dev
+  visiblename: lua5.4-dev
+  version: 5.4.8
+  origversion: 5.4.8-r0
+  status: outdated
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_23
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-doc
+  visiblename: lua5.4-doc
+  version: 5.4.8
+  origversion: 5.4.8-r0
+  status: outdated
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_3_23
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4-libs
+  visiblename: lua5.4-libs
+  version: 5.4.8
+  origversion: 5.4.8-r0
+  status: outdated
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+- repo: alpine_edge
+  subrepo: main
+  srcname: lua5.4
+  binname: lua5.4
   visiblename: lua5.4
   version: 5.4.9
-  origversion: 5.4.9-2
+  origversion: 5.4.9-r0
   status: legacy
-  maintainers:
-    - pkg-lua-devel@lists.alioth.debian.org
-    - sgolovan@debian.org
-  categories:
-    - misc
-- repo: alpine_3_18
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4
-  visiblename: lua5.4
-  version: 5.4.6
-  origversion: 5.4.6-r0
-  status: outdated
   summary: Powerful light-weight programming language
   maintainers:
     - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_18
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-dbg
-  visiblename: lua5.4-dbg
-  version: 5.4.6
-  origversion: 5.4.6-r0
-  status: outdated
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_18
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-dev
-  visiblename: lua5.4-dev
-  version: 5.4.6
-  origversion: 5.4.6-r0
-  status: outdated
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_18
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-doc
-  visiblename: lua5.4-doc
-  version: 5.4.6
-  origversion: 5.4.6-r0
-  status: outdated
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_18
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-libs
-  visiblename: lua5.4-libs
-  version: 5.4.6
-  origversion: 5.4.6-r0
-  status: outdated
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_19
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4
-  visiblename: lua5.4
-  version: 5.4.6
-  origversion: 5.4.6-r1
-  status: outdated
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_19
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-dbg
-  visiblename: lua5.4-dbg
-  version: 5.4.6
-  origversion: 5.4.6-r1
-  status: outdated
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_19
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-dev
-  visiblename: lua5.4-dev
-  version: 5.4.6
-  origversion: 5.4.6-r1
-  status: outdated
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_19
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-doc
-  visiblename: lua5.4-doc
-  version: 5.4.6
-  origversion: 5.4.6-r1
-  status: outdated
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_19
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-libs
-  visiblename: lua5.4-libs
-  version: 5.4.6
-  origversion: 5.4.6-r1
-  status: outdated
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_20
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4
-  visiblename: lua5.4
-  version: 5.4.6
-  origversion: 5.4.6-r1
-  status: outdated
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_20
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-dbg
-  visiblename: lua5.4-dbg
-  version: 5.4.6
-  origversion: 5.4.6-r1
-  status: outdated
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_20
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-dev
-  visiblename: lua5.4-dev
-  version: 5.4.6
-  origversion: 5.4.6-r1
-  status: outdated
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_20
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-doc
-  visiblename: lua5.4-doc
-  version: 5.4.6
-  origversion: 5.4.6-r1
-  status: outdated
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_20
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-libs
-  visiblename: lua5.4-libs
-  version: 5.4.6
-  origversion: 5.4.6-r1
-  status: outdated
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_21
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4
-  visiblename: lua5.4
-  version: 5.4.7
-  origversion: 5.4.7-r0
-  status: outdated
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_21
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-dbg
-  visiblename: lua5.4-dbg
-  version: 5.4.7
-  origversion: 5.4.7-r0
-  status: outdated
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_21
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-dev
-  visiblename: lua5.4-dev
-  version: 5.4.7
-  origversion: 5.4.7-r0
-  status: outdated
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_21
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-doc
-  visiblename: lua5.4-doc
-  version: 5.4.7
-  origversion: 5.4.7-r0
-  status: outdated
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_21
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-libs
-  visiblename: lua5.4-libs
-  version: 5.4.7
-  origversion: 5.4.7-r0
-  status: outdated
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_22
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4
-  visiblename: lua5.4
-  version: 5.4.7
-  origversion: 5.4.7-r0
-  status: outdated
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_22
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-dbg
-  visiblename: lua5.4-dbg
-  version: 5.4.7
-  origversion: 5.4.7-r0
-  status: outdated
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_22
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-dev
-  visiblename: lua5.4-dev
-  version: 5.4.7
-  origversion: 5.4.7-r0
-  status: outdated
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_22
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-doc
-  visiblename: lua5.4-doc
-  version: 5.4.7
-  origversion: 5.4.7-r0
-  status: outdated
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_22
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-libs
-  visiblename: lua5.4-libs
-  version: 5.4.7
-  origversion: 5.4.7-r0
-  status: outdated
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: spack
-  srcname: lua
-  visiblename: lua
-  version: 5.4.8
-  origversion: null
-  status: outdated
-  maintainers:
-    - fallback-mnt-spack@repology
   licenses:
     - MIT
 - repo: alpine_3_24
   subrepo: main
   srcname: lua5.4
-  binname: lua5.4-libs
-  visiblename: lua5.4-libs
-  version: 5.4.8
-  origversion: 5.4.8-r0
-  status: outdated
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_23
-  subrepo: main
-  srcname: lua5.4
   binname: lua5.4
   visiblename: lua5.4
   version: 5.4.8
@@ -493,7 +544,7 @@
     - ncopa@alpinelinux.org
   licenses:
     - MIT
-- repo: alpine_3_23
+- repo: alpine_3_24
   subrepo: main
   srcname: lua5.4
   binname: lua5.4-dbg
@@ -506,7 +557,7 @@
     - ncopa@alpinelinux.org
   licenses:
     - MIT
-- repo: alpine_3_23
+- repo: alpine_3_24
   subrepo: main
   srcname: lua5.4
   binname: lua5.4-dev
@@ -519,7 +570,7 @@
     - ncopa@alpinelinux.org
   licenses:
     - MIT
-- repo: alpine_3_23
+- repo: alpine_3_24
   subrepo: main
   srcname: lua5.4
   binname: lua5.4-doc
@@ -532,7 +583,7 @@
     - ncopa@alpinelinux.org
   licenses:
     - MIT
-- repo: alpine_3_23
+- repo: alpine_3_24
   subrepo: main
   srcname: lua5.4
   binname: lua5.4-libs
@@ -554,58 +605,6 @@
   origversion: 5.5.0-r1
   status: outdated
   summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_24
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4
-  visiblename: lua5.4
-  version: 5.4.8
-  origversion: 5.4.8-r0
-  status: outdated
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_24
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-dbg
-  visiblename: lua5.4-dbg
-  version: 5.4.8
-  origversion: 5.4.8-r0
-  status: outdated
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_24
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-dev
-  visiblename: lua5.4-dev
-  version: 5.4.8
-  origversion: 5.4.8-r0
-  status: outdated
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: alpine_3_24
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4-doc
-  visiblename: lua5.4-doc
-  version: 5.4.8
-  origversion: 5.4.8-r0
-  status: outdated
-  summary: Powerful light-weight programming language (documentation)
   maintainers:
     - ncopa@alpinelinux.org
   licenses:
@@ -658,25 +657,6 @@
   origversion: 5.5.0-r1
   status: outdated
   summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-- repo: conancenter
-  srcname: lua
-  visiblename: lua
-  version: 5.4.6
-  origversion: null
-  status: legacy
-- repo: alpine_edge
-  subrepo: main
-  srcname: lua5.4
-  binname: lua5.4
-  visiblename: lua5.4
-  version: 5.4.9
-  origversion: 5.4.9-r0
-  status: legacy
-  summary: Powerful light-weight programming language
   maintainers:
     - ncopa@alpinelinux.org
   licenses:
@@ -903,17 +883,6 @@
   summary: Powerful lightweight programming language designed for extending applications
   licenses:
     - MIT
-- repo: arch
-  subrepo: extra
-  srcname: lua54
-  binname: lua54
-  visiblename: lua54
-  version: 5.4.9
-  origversion: 5.4.9-1
-  status: legacy
-  summary: Powerful lightweight programming language designed for extending applications
-  licenses:
-    - MIT
 - repo: aur
   srcname: lua32
   binname: lua32
@@ -964,17 +933,6 @@
     - MIT
 - repo: artix
   subrepo: world
-  srcname: lua
-  binname: lua
-  visiblename: lua
-  version: 5.5.1
-  origversion: 5.5.1-1
-  status: newest
-  summary: Powerful lightweight programming language designed for extending applications
-  licenses:
-    - MIT
-- repo: artix
-  subrepo: world
   srcname: lua54
   binname: lua54
   visiblename: lua54
@@ -984,16 +942,15 @@
   summary: Powerful lightweight programming language designed for extending applications
   licenses:
     - MIT
-- repo: carbs
-  subrepo: community
+- repo: artix
+  subrepo: world
   srcname: lua
+  binname: lua
   visiblename: lua
-  version: 5.4.7
-  origversion: null
-  status: outdated
-  summary: Lua programming language
-  maintainers:
-    - cem@carbslinux.org
+  version: 5.5.1
+  origversion: 5.5.1-1
+  status: newest
+  summary: Powerful lightweight programming language designed for extending applications
   licenses:
     - MIT
 - repo: centos_stream_10
@@ -1190,6 +1147,12 @@
   version: 5.4.8
   origversion: null
   status: outdated
+- repo: conancenter
+  srcname: lua
+  visiblename: lua
+  version: 5.4.6
+  origversion: null
+  status: legacy
 - repo: crux_37
   subrepo: opt
   srcname: lua
@@ -1244,20 +1207,6 @@
     - sgolovan@debian.org
   categories:
     - misc
-- repo: deepin_25
-  subrepo: main
-  srcname: lua5.4
-  binnames:
-    - lua5.4
-    - liblua5.4-dev
-    - liblua5.4-0
-  visiblename: lua5.4
-  version: 5.4.7
-  origversion: 5.4.7-1
-  status: outdated
-  maintainers:
-    - pkg-lua-devel@lists.alioth.debian.org
-    - sgolovan@debian.org
 - repo: debian_14
   subrepo: forky/main
   srcname: lua5.4
@@ -1267,7 +1216,7 @@
     - liblua5.4-0
   visiblename: lua5.4
   version: 5.4.9
-  origversion: 5.4.9-1
+  origversion: 5.4.9-2
   status: legacy
   maintainers:
     - pkg-lua-devel@lists.alioth.debian.org
@@ -1290,24 +1239,6 @@
     - sgolovan@debian.org
   categories:
     - libs
-- repo: devuan_4_0
-  subrepo: chimaera/main
-  srcname: lua50
-  binnames:
-    - lua50
-    - lua50-doc
-    - liblua50
-    - liblua50-dev
-    - liblualib50
-    - liblualib50-dev
-  visiblename: lua50
-  version: 5.0.3
-  origversion: 5.0.3-8.1
-  status: legacy
-  maintainers:
-    - gareuselesinge@debian.org
-  categories:
-    - interpreters
 - repo: debian_unstable
   subrepo: sid/main
   srcname: lua5.4
@@ -1356,6 +1287,54 @@
   status: legacy
   maintainers:
     - gareuselesinge@debian.org
+- repo: deepin_25
+  subrepo: main
+  srcname: lua5.4
+  binnames:
+    - lua5.4
+    - liblua5.4-dev
+    - liblua5.4-0
+  visiblename: lua5.4
+  version: 5.4.7
+  origversion: 5.4.7-1
+  status: outdated
+  maintainers:
+    - pkg-lua-devel@lists.alioth.debian.org
+    - sgolovan@debian.org
+- repo: devuan_4_0
+  subrepo: chimaera/main
+  srcname: lua50
+  binnames:
+    - lua50
+    - lua50-doc
+    - liblua50
+    - liblua50-dev
+    - liblualib50
+    - liblualib50-dev
+  visiblename: lua50
+  version: 5.0.3
+  origversion: 5.0.3-8.1
+  status: legacy
+  maintainers:
+    - gareuselesinge@debian.org
+  categories:
+    - interpreters
+- repo: devuan_unstable
+  subrepo: unstable/main
+  srcname: lua5.4
+  binnames:
+    - lua5.4
+    - liblua5.4-dev
+    - liblua5.4-0
+  visiblename: lua5.4
+  version: 5.4.9
+  origversion: 5.4.9-2
+  status: legacy
+  maintainers:
+    - pkg-lua-devel@lists.alioth.debian.org
+    - sgolovan@debian.org
+  categories:
+    - misc
 - repo: devuan_unstable
   subrepo: unstable/main
   srcname: lua5.5
@@ -1503,39 +1482,6 @@
   categories:
     - Unspecified
 - repo: fedora_43
-  subrepo: updates
-  srcname: lua
-  binnames:
-    - lua
-    - lua-devel
-    - lua-libs
-    - lua-static
-  visiblename: lua
-  version: 5.4.8
-  origversion: 5.4.8-4.fc43
-  status: outdated
-  summary: Powerful light-weight programming language
-  licenses:
-    - MIT
-  categories:
-    - Unspecified
-- repo: kali_rolling
-  subrepo: main
-  srcname: lua5.4
-  binnames:
-    - lua5.4
-    - liblua5.4-dev
-    - liblua5.4-0
-  visiblename: lua5.4
-  version: 5.4.9
-  origversion: 5.4.9-1
-  status: legacy
-  maintainers:
-    - pkg-lua-devel@lists.alioth.debian.org
-    - sgolovan@debian.org
-  categories:
-    - misc
-- repo: fedora_43
   subrepo: release
   srcname: lua
   binnames:
@@ -1546,6 +1492,23 @@
   visiblename: lua
   version: 5.4.8
   origversion: 5.4.8-2.fc43
+  status: outdated
+  summary: Powerful light-weight programming language
+  licenses:
+    - MIT
+  categories:
+    - Unspecified
+- repo: fedora_43
+  subrepo: updates
+  srcname: lua
+  binnames:
+    - lua
+    - lua-devel
+    - lua-libs
+    - lua-static
+  visiblename: lua
+  version: 5.4.8
+  origversion: 5.4.8-4.fc43
   status: outdated
   summary: Powerful light-weight programming language
   licenses:
@@ -1679,6 +1642,22 @@
   origversion: null
   status: legacy
   summary: Powerful, lightweight programming language
+- repo: kali_rolling
+  subrepo: main
+  srcname: lua5.4
+  binnames:
+    - lua5.4
+    - liblua5.4-dev
+    - liblua5.4-0
+  visiblename: lua5.4
+  version: 5.4.9
+  origversion: 5.4.9-1
+  status: legacy
+  maintainers:
+    - pkg-lua-devel@lists.alioth.debian.org
+    - sgolovan@debian.org
+  categories:
+    - misc
 - repo: kali_rolling
   subrepo: main
   srcname: lua5.5
@@ -1824,10 +1803,76 @@
   srcname: lua
   binname: lua
   visiblename: lua
-  version: 5.4.6
-  origversion: 5.4.6-1
-  status: outdated
+  version: 5.5.1
+  origversion: 5.5.1-1
+  status: newest
   summary: Powerful lightweight programming language designed for extending applications
+  licenses:
+    - MIT
+- repo: manjaro_stable
+  subrepo: extra
+  srcname: lua54
+  binname: lua54
+  visiblename: lua54
+  version: 5.4.9
+  origversion: 5.4.9-1
+  status: legacy
+  summary: Powerful lightweight programming language designed for extending applications
+  licenses:
+    - MIT
+- repo: manjaro_testing
+  subrepo: extra
+  srcname: lua
+  binname: lua
+  visiblename: lua
+  version: 5.5.1
+  origversion: 5.5.1-1
+  status: newest
+  summary: Powerful lightweight programming language designed for extending applications
+  licenses:
+    - MIT
+- repo: manjaro_testing
+  subrepo: extra
+  srcname: lua54
+  binname: lua54
+  visiblename: lua54
+  version: 5.4.9
+  origversion: 5.4.9-1
+  status: legacy
+  summary: Powerful lightweight programming language designed for extending applications
+  licenses:
+    - MIT
+- repo: manjaro_unstable
+  subrepo: extra
+  srcname: lua54
+  binname: lua54
+  visiblename: lua54
+  version: 5.4.9
+  origversion: 5.4.9-1
+  status: legacy
+  summary: Powerful lightweight programming language designed for extending applications
+  licenses:
+    - MIT
+- repo: manjaro_unstable
+  subrepo: extra
+  srcname: lua
+  binname: lua
+  visiblename: lua
+  version: 5.5.1
+  origversion: 5.5.1-1
+  status: newest
+  summary: Powerful lightweight programming language designed for extending applications
+  licenses:
+    - MIT
+- repo: nix_stable_25_11
+  srcname: lua5_4_compat
+  visiblename: lua
+  version: 5.4.7
+  origversion: null
+  status: outdated
+  summary: Powerful, fast, lightweight, embeddable scripting language
+  maintainers:
+    - fallback-mnt-nix@repology
   licenses:
     - MIT
 - repo: msys2_clang64
@@ -1851,16 +1896,6 @@
   licenses:
     - spdx:MIT
 - repo: msys2_clangarm64
-  srcname: mingw-w64-lua
-  binname: mingw-w64-clang-aarch64-lua
-  visiblename: mingw-w64-clang-aarch64-lua
-  version: 5.5.1
-  origversion: 5.5.1-1
-  status: newest
-  summary: A powerful light-weight programming language designed for extending applications. (mingw-w64)
-  licenses:
-    - spdx:MIT
-- repo: msys2_clangarm64
   srcname: mingw-w64-lua54
   binname: mingw-w64-clang-aarch64-lua54
   visiblename: mingw-w64-clang-aarch64-lua54
@@ -1870,11 +1905,10 @@
   summary: A powerful light-weight programming language designed for extending applications. Version 5.4.x (mingw-w64)
   licenses:
     - spdx:MIT
-- repo: msys2_mingw
-  subrepo: x86_64
+- repo: msys2_clangarm64
   srcname: mingw-w64-lua
-  binname: mingw-w64-x86_64-lua
-  visiblename: mingw-w64-x86_64-lua
+  binname: mingw-w64-clang-aarch64-lua
+  visiblename: mingw-w64-clang-aarch64-lua
   version: 5.5.1
   origversion: 5.5.1-1
   status: newest
@@ -1890,6 +1924,17 @@
   origversion: 5.4.9-1
   status: legacy
   summary: A powerful light-weight programming language designed for extending applications. Version 5.4.x (mingw-w64)
+  licenses:
+    - spdx:MIT
+- repo: msys2_mingw
+  subrepo: x86_64
+  srcname: mingw-w64-lua
+  binname: mingw-w64-x86_64-lua
+  visiblename: mingw-w64-x86_64-lua
+  version: 5.5.1
+  origversion: 5.5.1-1
+  status: newest
+  summary: A powerful light-weight programming language designed for extending applications. (mingw-w64)
   licenses:
     - spdx:MIT
 - repo: msys2_msys2
@@ -1956,17 +2001,6 @@
     - fallback-mnt-nix@repology
   licenses:
     - MIT
-- repo: nix_stable_25_11
-  srcname: lua5_4_compat
-  visiblename: lua
-  version: 5.4.7
-  origversion: null
-  status: outdated
-  summary: Powerful, fast, lightweight, embeddable scripting language
-  maintainers:
-    - fallback-mnt-nix@repology
-  licenses:
-    - MIT
 - repo: nix_stable_26_05
   srcname: lua5_4
   visiblename: lua
@@ -2001,50 +2035,6 @@
   licenses:
     - MIT
 - repo: nix_stable_26_05
-  srcname: lua5_5_compat
-  visiblename: lua
-  version: 5.5.1
-  origversion: null
-  status: newest
-  summary: Powerful, fast, lightweight, embeddable scripting language
-  maintainers:
-    - fallback-mnt-nix@repology
-  licenses:
-    - MIT
-- repo: nix_unstable
-  srcname: lua5_4
-  visiblename: lua
-  version: 5.4.9
-  origversion: null
-  status: legacy
-  summary: Powerful, fast, lightweight, embeddable scripting language
-  maintainers:
-    - fallback-mnt-nix@repology
-  licenses:
-    - MIT
-- repo: nix_unstable
-  srcname: lua5_4_compat
-  visiblename: lua
-  version: 5.4.9
-  origversion: null
-  status: legacy
-  summary: Powerful, fast, lightweight, embeddable scripting language
-  maintainers:
-    - fallback-mnt-nix@repology
-  licenses:
-    - MIT
-- repo: nix_unstable
-  srcname: lua5_5
-  visiblename: lua
-  version: 5.5.1
-  origversion: null
-  status: newest
-  summary: Powerful, fast, lightweight, embeddable scripting language
-  maintainers:
-    - fallback-mnt-nix@repology
-  licenses:
-    - MIT
-- repo: nix_unstable
   srcname: lua5_5_compat
   visiblename: lua
   version: 5.5.1
@@ -2068,6 +2058,50 @@
     - BSD-2-Clause
   categories:
     - nginxModules
+- repo: nix_unstable
+  srcname: lua5_4
+  visiblename: lua
+  version: 5.4.9
+  origversion: null
+  status: legacy
+  summary: Powerful, fast, lightweight, embeddable scripting language
+  maintainers:
+    - fallback-mnt-nix@repology
+  licenses:
+    - MIT
+- repo: nix_unstable
+  srcname: lua5_4_compat
+  visiblename: lua
+  version: 5.4.9
+  origversion: null
+  status: legacy
+  summary: Powerful, fast, lightweight, embeddable scripting language
+  maintainers:
+    - fallback-mnt-nix@repology
+  licenses:
+    - MIT
+- repo: nix_unstable
+  srcname: lua5_5
+  visiblename: lua
+  version: 5.5.1
+  origversion: null
+  status: newest
+  summary: Powerful, fast, lightweight, embeddable scripting language
+  maintainers:
+    - fallback-mnt-nix@repology
+  licenses:
+    - MIT
+- repo: nix_unstable
+  srcname: lua5_5_compat
+  visiblename: lua
+  version: 5.5.1
+  origversion: null
+  status: newest
+  summary: Powerful, fast, lightweight, embeddable scripting language
+  maintainers:
+    - fallback-mnt-nix@repology
+  licenses:
+    - MIT
 - repo: openbsd
   srcname: lang/lua/5.4
   binname: lua
@@ -2305,6 +2339,20 @@
   categories:
     - Development/Other
 - repo: openmandriva_rolling
+  subrepo: unsupported/release
+  srcname: lua5.0
+  visiblename: lua5.0
+  version: 5.0.3
+  origversion: 5.0.3-11
+  status: legacy
+  summary: Powerful, light-weight programming language
+  maintainers:
+    - bero@lindev.ch
+  licenses:
+    - MIT
+  categories:
+    - Development/Other
+- repo: openmandriva_rolling
   subrepo: main/release
   srcname: lua
   binnames:
@@ -2316,20 +2364,6 @@
   version: 5.4.8
   origversion: 5.4.8-1
   status: outdated
-  summary: Powerful, light-weight programming language
-  maintainers:
-    - bero@lindev.ch
-  licenses:
-    - MIT
-  categories:
-    - Development/Other
-- repo: openmandriva_rolling
-  subrepo: unsupported/release
-  srcname: lua5.0
-  visiblename: lua5.0
-  version: 5.0.3
-  origversion: 5.0.3-11
-  status: legacy
   summary: Powerful, light-weight programming language
   maintainers:
     - bero@lindev.ch
@@ -2370,28 +2404,6 @@
     - MIT
   categories:
     - Development/Other
-- repo: openpkg_current
-  srcname: lua
-  visiblename: lua
-  version: 5.5.0
-  origversion: null
-  status: outdated
-  summary: LUA Programming Language
-  licenses:
-    - MIT
-  categories:
-    - Language
-- repo: parabola
-  subrepo: extra
-  srcname: lua54
-  binname: lua54
-  visiblename: lua54
-  version: 5.4.9
-  origversion: 5.4.9-1
-  status: legacy
-  summary: Powerful lightweight programming language designed for extending applications
-  licenses:
-    - MIT
 - repo: opensuse_tumbleweed
   subrepo: src-oss
   srcname: lua54
@@ -2430,6 +2442,24 @@
     - MIT
   categories:
     - Development/Languages/Other
+- repo: pardus_21
+  subrepo: main
+  srcname: lua50
+  binnames:
+    - lua50
+    - lua50-doc
+    - liblua50
+    - liblua50-dev
+    - liblualib50
+    - liblualib50-dev
+  visiblename: lua50
+  version: 5.0.3
+  origversion: 5.0.3-8.1
+  status: legacy
+  maintainers:
+    - gareuselesinge@debian.org
+  categories:
+    - interpreters
 - repo: openwrt_24_10_x86_64
   subrepo: packages
   srcname: feeds/packages/lang/lua5.4
@@ -2477,6 +2507,17 @@
     - development/language
 - repo: parabola
   subrepo: extra
+  srcname: lua54
+  binname: lua54
+  visiblename: lua54
+  version: 5.4.9
+  origversion: 5.4.9-1
+  status: legacy
+  summary: Powerful lightweight programming language designed for extending applications
+  licenses:
+    - MIT
+- repo: parabola
+  subrepo: extra
   srcname: lua
   binname: lua
   visiblename: lua
@@ -2486,26 +2527,8 @@
   summary: Powerful lightweight programming language designed for extending applications
   licenses:
     - MIT
-- repo: pardus_21
-  subrepo: main
-  srcname: lua50
-  binnames:
-    - lua50
-    - lua50-doc
-    - liblua50
-    - liblua50-dev
-    - liblualib50
-    - liblualib50-dev
-  visiblename: lua50
-  version: 5.0.3
-  origversion: 5.0.3-8.1
-  status: legacy
-  maintainers:
-    - gareuselesinge@debian.org
-  categories:
-    - interpreters
 - repo: parrot
-  subrepo: parrot-updates/main
+  subrepo: parrot/main
   srcname: lua5.4
   binnames:
     - lua5.4
@@ -2521,7 +2544,7 @@
   categories:
     - misc
 - repo: parrot
-  subrepo: parrot/main
+  subrepo: parrot-updates/main
   srcname: lua5.4
   binnames:
     - lua5.4
@@ -2658,14 +2681,6 @@
   version: 5.4.9
   origversion: 5.4.9-1
   status: outdated
-- repo: ptxdist
-  srcname: lua
-  visiblename: lua
-  version: 5.5.1
-  origversion: null
-  status: newest
-  licenses:
-    - MIT
 - repo: pureos_amber
   subrepo: amber/main
   srcname: lua50
@@ -2718,6 +2733,13 @@
     - sgolovan@debian.org
   categories:
     - libs
+- repo: pld
+  srcname: lua51
+  visiblename: lua51
+  version: 5.1.5
+  origversion: 5.1.5-8
+  status: legacy
+  vulnerable: true
 - repo: raspbian_oldstable
   subrepo: main
   srcname: lua50
@@ -2761,7 +2783,7 @@
     - liblua5.4-0
   visiblename: lua5.4
   version: 5.4.9
-  origversion: 5.4.9-1
+  origversion: 5.4.9-2
   status: legacy
   maintainers:
     - pkg-lua-devel@lists.alioth.debian.org
@@ -2956,6 +2978,23 @@
     - MIT
   categories:
     - programming.devel
+- repo: spack
+  srcname: lua
+  visiblename: lua
+  version: 5.4.8
+  origversion: null
+  status: outdated
+  maintainers:
+    - fallback-mnt-spack@repology
+  licenses:
+    - MIT
+- repo: xrepo
+  srcname: lua
+  visiblename: lua
+  version: 5.4.6
+  origversion: null
+  status: legacy
+  summary: A powerful, efficient, lightweight, embeddable scripting language.
 - repo: stalix
   srcname: lib/lua/puc/5/5
   binname: lib/lua/puc/5/5
@@ -3158,22 +3197,6 @@
   categories:
     - universe/libs
 - repo: ubuntu_26_04
-  subrepo: resolute-updates/universe
-  srcname: lua5.5
-  binnames:
-    - lua5.5
-    - liblua5.5-dev
-    - liblua5.5-0
-  visiblename: lua5.5
-  version: 5.5.0
-  origversion: 5.5.0-3ubuntu0.1
-  status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - sgolovan@debian.org
-  categories:
-    - universe/libs
-- repo: ubuntu_26_04
   subrepo: resolute/main
   srcname: lua5.4
   binnames:
@@ -3189,22 +3212,22 @@
     - sgolovan@debian.org
   categories:
     - misc
-- repo: ubuntu_26_10
-  subrepo: stonking/main
+- repo: ubuntu_26_04
+  subrepo: resolute-updates/universe
   srcname: lua5.5
   binnames:
     - lua5.5
     - liblua5.5-dev
     - liblua5.5-0
   visiblename: lua5.5
-  version: 5.5.1
-  origversion: 5.5.1-1
-  status: newest
+  version: 5.5.0
+  origversion: 5.5.0-3ubuntu0.1
+  status: outdated
   maintainers:
-    - pkg-lua-devel@lists.alioth.debian.org
+    - ubuntu-devel-discuss@lists.ubuntu.com
     - sgolovan@debian.org
   categories:
-    - libs
+    - universe/libs
 - repo: ubuntu_26_10
   subrepo: stonking/universe
   srcname: lua5.4
@@ -3221,6 +3244,54 @@
     - sgolovan@debian.org
   categories:
     - universe/misc
+- repo: ubuntu_26_10
+  subrepo: stonking/main
+  srcname: lua5.5
+  binnames:
+    - lua5.5
+    - liblua5.5-dev
+    - liblua5.5-0
+  visiblename: lua5.5
+  version: 5.5.1
+  origversion: 5.5.1-1
+  status: newest
+  maintainers:
+    - pkg-lua-devel@lists.alioth.debian.org
+    - sgolovan@debian.org
+  categories:
+    - libs
+- repo: ubuntu_27_04
+  subrepo: tenacious/universe
+  srcname: lua5.4
+  binnames:
+    - lua5.4
+    - liblua5.4-dev
+    - liblua5.4-0
+  visiblename: lua5.4
+  version: 5.4.9
+  origversion: 5.4.9-2
+  status: legacy
+  maintainers:
+    - pkg-lua-devel@lists.alioth.debian.org
+    - sgolovan@debian.org
+  categories:
+    - universe/misc
+- repo: ubuntu_27_04
+  subrepo: tenacious/main
+  srcname: lua5.5
+  binnames:
+    - lua5.5
+    - liblua5.5-dev
+    - liblua5.5-0
+  visiblename: lua5.5
+  version: 5.5.1
+  origversion: 5.5.1-2
+  status: newest
+  maintainers:
+    - pkg-lua-devel@lists.alioth.debian.org
+    - sgolovan@debian.org
+  categories:
+    - libs
 - repo: vcpkg
   srcname: lua
   visiblename: lua
@@ -3302,13 +3373,6 @@
 - repo: xrepo
   srcname: lua
   visiblename: lua
-  version: 5.4.6
-  origversion: null
-  status: legacy
-  summary: A powerful, efficient, lightweight, embeddable scripting language.
-- repo: xrepo
-  srcname: lua
-  visiblename: lua
   version: 5.4.7
   origversion: null
   status: legacy
@@ -3334,151 +3398,140 @@
   origversion: null
   status: newest
   summary: A powerful, efficient, lightweight, embeddable scripting language.
-- repo: aix_osp
+- repo: eurolinux_8
+  subrepo: baseos
   srcname: lua
   visiblename: lua
-  version: 5.4.0
-  origversion: 5.4.0-1
+  version: 5.3.4
+  origversion: 5.3.4-12.el8
   status: outdated
+  summary: Powerful light-weight programming language
+  licenses:
+    - MIT
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: almalinux_8
+  subrepo: BaseOS
+  srcname: lua
+  visiblename: lua
+  version: 5.3.4
+  origversion: 5.3.4-12.el8
+  status: outdated
+  summary: Powerful light-weight programming language
+  maintainers:
+    - packager@almalinux.org
+  licenses:
+    - MIT
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: centos_6
+  subrepo: os
+  srcname: lua
+  visiblename: lua
+  version: 5.1.4
+  origversion: 5.1.4-4.1.el6
+  status: outdated
+  summary: Powerful light-weight programming language
+  licenses:
+    - MIT
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: ubi_8
+  subrepo: baseos
+  srcname: lua
+  visiblename: lua
+  version: 5.3.4
+  origversion: 5.3.4-12.el8
+  status: outdated
+  summary: Powerful light-weight programming language
+  licenses:
+    - MIT
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: eurolinux_9
+  subrepo: baseos
+  srcname: lua
+  binnames:
+    - lua
+    - lua-devel
+    - lua-libs
+    - lua-static
+    - lua-debuginfo
+    - lua-debugsource
+  visiblename: lua
+  version: 5.4.2
+  origversion: 5.4.2-4.el9_0.3
+  status: legacy
+  summary: Powerful light-weight programming language
+  licenses:
+    - MIT
+  categories:
+    - Unspecified
   vulnerable: true
 - repo: cygwin
-  srcname: lua5.1
-  binname: lua5.1-devel
-  visiblename: lua5.1-devel
-  version: 5.1.5
-  origversion: 5.1.5-3
-  status: legacy
-  summary: Lua programming language interpreter
-  maintainers:
-    - orphaned@cygwin
-  categories:
-    - Interpreters
-  vulnerable: true
-- repo: artix
-  subrepo: world
-  srcname: lua51
-  binname: lua51
-  visiblename: lua51
-  version: 5.1.5
-  origversion: 5.1.5-13
-  status: legacy
-  summary: Powerful lightweight programming language designed for extending applications
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: manjaro_testing
-  subrepo: extra
-  srcname: lua53
-  binname: lua53
-  visiblename: lua53
-  version: 5.3.6
-  origversion: 5.3.6-2
-  status: legacy
-  summary: Powerful lightweight programming language designed for extending applications
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: manjaro_testing
-  subrepo: extra
-  srcname: lua51
-  binname: lua51
-  visiblename: lua51
-  version: 5.1.5
-  origversion: 5.1.5-11
-  status: legacy
-  summary: Powerful lightweight programming language designed for extending applications
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: manjaro_unstable
-  subrepo: extra
-  srcname: lua52
-  binname: lua52
-  visiblename: lua52
-  version: 5.2.4
-  origversion: 5.2.4-8
-  status: legacy
-  summary: Powerful lightweight programming language designed for extending applications
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: manjaro_unstable
-  subrepo: extra
-  srcname: lua51
-  binname: lua51
-  visiblename: lua51
-  version: 5.1.5
-  origversion: 5.1.5-13
-  status: legacy
-  summary: Powerful lightweight programming language designed for extending applications
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: manjaro_unstable
-  subrepo: extra
-  srcname: lua53
-  binname: lua53
-  visiblename: lua53
+  srcname: lua
+  binname: liblua5.4
+  visiblename: liblua5.4
   version: 5.3.6
   origversion: 5.3.6-4
   status: legacy
-  summary: Powerful lightweight programming language designed for extending applications
+  summary: Lua programming language interpreter
+  maintainers:
+    - lemures.lemniscati@cygwin
+  categories:
+    - Interpreters
+  vulnerable: true
+- repo: eurolinux_9
+  subrepo: baseos
+  srcname: lua
+  binnames:
+    - lua
+    - lua-devel
+    - lua-libs
+    - lua-static
+    - lua-debuginfo
+    - lua-debugsource
+  visiblename: lua
+  version: 5.4.4
+  origversion: 5.4.4-2.el9_1
+  status: outdated
+  summary: Powerful light-weight programming language
   licenses:
     - MIT
-  vulnerable: true
-- repo: devuan_unstable
-  subrepo: unstable/main
-  srcname: lua5.1
-  binnames:
-    - lua5.1-doc
-    - lua5.1
-    - liblua5.1-0-dev
-    - liblua5.1-0
-  visiblename: lua5.1
-  version: 5.1.5
-  origversion: 5.1.5-12
-  status: legacy
-  maintainers:
-    - pkg-lua-devel@lists.alioth.debian.org
-    - bage@debian.org
   categories:
-    - interpreters
+    - Unspecified
   vulnerable: true
-- repo: devuan_unstable
-  subrepo: unstable/main
-  srcname: lua5.2
-  binnames:
-    - lua5.2-doc
-    - lua5.2
-    - liblua5.2-dev
-    - liblua5.2-0
-  visiblename: lua5.2
+- repo: aix_osp
+  srcname: lua
+  visiblename: lua
   version: 5.2.4
-  origversion: 5.2.4-4
+  origversion: 5.2.4-1
   status: legacy
-  maintainers:
-    - pkg-lua-devel@lists.alioth.debian.org
-    - jbelmonte@debian.org
-    - vseva@debian.org
-  categories:
-    - interpreters
   vulnerable: true
-- repo: devuan_unstable
-  subrepo: unstable/main
-  srcname: lua5.3
-  binnames:
-    - lua5.3
-    - liblua5.3-dev
-    - liblua5.3-0
-  visiblename: lua5.3
-  version: 5.3.6
-  origversion: 5.3.6-5
+- repo: aix_osp
+  srcname: lua
+  visiblename: lua
+  version: 5.3.0
+  origversion: 5.3.0-1
   status: legacy
-  maintainers:
-    - pkg-lua-devel@lists.alioth.debian.org
-    - ondrej@debian.org
-  categories:
-    - misc
+  vulnerable: true
+- repo: aix_osp
+  srcname: lua
+  visiblename: lua
+  version: 5.3.1
+  origversion: 5.3.1-1
+  status: legacy
+  vulnerable: true
+- repo: aix_osp
+  srcname: lua
+  visiblename: lua
+  version: 5.3.2
+  origversion: 5.3.2-1
+  status: legacy
   vulnerable: true
 - repo: aix_osp
   srcname: lua
@@ -3492,6 +3545,13 @@
   visiblename: lua
   version: 5.3.5
   origversion: 5.3.5-1
+  status: outdated
+  vulnerable: true
+- repo: aix_osp
+  srcname: lua
+  visiblename: lua
+  version: 5.4.0
+  origversion: 5.4.0-1
   status: outdated
   vulnerable: true
 - repo: adelie_current
@@ -3627,63 +3687,6 @@
   origversion: 5.2.2-1
   status: legacy
   vulnerable: true
-- repo: aix_osp
-  srcname: lua
-  visiblename: lua
-  version: 5.2.3
-  origversion: 5.2.3-1
-  status: legacy
-  vulnerable: true
-- repo: aix_osp
-  srcname: lua
-  visiblename: lua
-  version: 5.2.4
-  origversion: 5.2.4-1
-  status: legacy
-  vulnerable: true
-- repo: aix_osp
-  srcname: lua
-  visiblename: lua
-  version: 5.3.0
-  origversion: 5.3.0-1
-  status: legacy
-  vulnerable: true
-- repo: aix_osp
-  srcname: lua
-  visiblename: lua
-  version: 5.3.1
-  origversion: 5.3.1-1
-  status: legacy
-  vulnerable: true
-- repo: aix_osp
-  srcname: lua
-  visiblename: lua
-  version: 5.3.2
-  origversion: 5.3.2-1
-  status: legacy
-  vulnerable: true
-- repo: aix_osp
-  srcname: lua
-  visiblename: lua
-  version: 5.3.3
-  origversion: 5.3.3-1
-  status: legacy
-  vulnerable: true
-- repo: almalinux_8
-  subrepo: BaseOS
-  srcname: lua
-  visiblename: lua
-  version: 5.3.4
-  origversion: 5.3.4-12.el8
-  status: outdated
-  summary: Powerful light-weight programming language
-  maintainers:
-    - packager@almalinux.org
-  licenses:
-    - MIT
-  categories:
-    - Development/Languages
-  vulnerable: true
 - repo: almalinux_9
   subrepo: BaseOS
   srcname: lua
@@ -3706,8 +3709,1988 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: apertis_v2025
-  subrepo: v2025/development
+- repo: alpine_3_17
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2
+  visiblename: lua5.2
+  version: 5.2.4
+  origversion: 5.2.4-r10
+  status: legacy
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-dev
+  visiblename: lua5.2-dev
+  version: 5.2.4
+  origversion: 5.2.4-r10
+  status: legacy
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-doc
+  visiblename: lua5.2-doc
+  version: 5.2.4
+  origversion: 5.2.4-r10
+  status: legacy
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-libs
+  visiblename: lua5.2-libs
+  version: 5.2.4
+  origversion: 5.2.4-r10
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: artix
+  subrepo: world
+  srcname: lua53
+  binname: lua53
+  visiblename: lua53
+  version: 5.3.6
+  origversion: 5.3.6-4
+  status: legacy
+  summary: Powerful lightweight programming language designed for extending applications
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-dbg
+  visiblename: lua5.2-dbg
+  version: 5.2.4
+  origversion: 5.2.4-r10
+  status: legacy
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-dbg
+  visiblename: lua5.3-dbg
+  version: 5.3.6
+  origversion: 5.3.6-r4
+  status: legacy
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3
+  visiblename: lua5.3
+  version: 5.3.6
+  origversion: 5.3.6-r4
+  status: legacy
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-doc
+  visiblename: lua5.3-doc
+  version: 5.3.6
+  origversion: 5.3.6-r4
+  status: legacy
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-libs
+  visiblename: lua5.3-libs
+  version: 5.3.6
+  origversion: 5.3.6-r4
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-dev
+  visiblename: lua5.3-dev
+  version: 5.3.6
+  origversion: 5.3.6-r4
+  status: legacy
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-dev
+  visiblename: lua5.1-dev
+  version: 5.1.5
+  origversion: 5.1.5-r11
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-doc
+  visiblename: lua5.1-doc
+  version: 5.1.5
+  origversion: 5.1.5-r11
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1
+  visiblename: lua5.1
+  version: 5.1.5
+  origversion: 5.1.5-r11
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications.
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-dbg
+  visiblename: lua5.1-dbg
+  version: 5.1.5
+  origversion: 5.1.5-r11
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_17
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-libs
+  visiblename: lua5.1-libs
+  version: 5.1.5
+  origversion: 5.1.5-r11
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1
+  visiblename: lua5.1
+  version: 5.1.5
+  origversion: 5.1.5-r12
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications.
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-dbg
+  visiblename: lua5.1-dbg
+  version: 5.1.5
+  origversion: 5.1.5-r12
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-dev
+  visiblename: lua5.1-dev
+  version: 5.1.5
+  origversion: 5.1.5-r12
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-doc
+  visiblename: lua5.1-doc
+  version: 5.1.5
+  origversion: 5.1.5-r12
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: xrepo
+  srcname: lua
+  visiblename: lua
+  version: 5.4.4
+  origversion: null
+  status: legacy
+  summary: A powerful, efficient, lightweight, embeddable scripting language.
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-libs
+  visiblename: lua5.1-libs
+  version: 5.1.5
+  origversion: 5.1.5-r12
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2
+  visiblename: lua5.2
+  version: 5.2.4
+  origversion: 5.2.4-r12
+  status: legacy
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-dbg
+  visiblename: lua5.2-dbg
+  version: 5.2.4
+  origversion: 5.2.4-r12
+  status: legacy
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-dev
+  visiblename: lua5.2-dev
+  version: 5.2.4
+  origversion: 5.2.4-r12
+  status: legacy
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-doc
+  visiblename: lua5.2-doc
+  version: 5.2.4
+  origversion: 5.2.4-r12
+  status: legacy
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-libs
+  visiblename: lua5.2-libs
+  version: 5.2.4
+  origversion: 5.2.4-r12
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3
+  visiblename: lua5.3
+  version: 5.3.6
+  origversion: 5.3.6-r5
+  status: legacy
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-dbg
+  visiblename: lua5.3-dbg
+  version: 5.3.6
+  origversion: 5.3.6-r5
+  status: legacy
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-dev
+  visiblename: lua5.3-dev
+  version: 5.3.6
+  origversion: 5.3.6-r5
+  status: legacy
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-doc
+  visiblename: lua5.3-doc
+  version: 5.3.6
+  origversion: 5.3.6-r5
+  status: legacy
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_18
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-libs
+  visiblename: lua5.3-libs
+  version: 5.3.6
+  origversion: 5.3.6-r5
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1
+  visiblename: lua5.1
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications.
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-dbg
+  visiblename: lua5.1-dbg
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-dev
+  visiblename: lua5.1-dev
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-doc
+  visiblename: lua5.1-doc
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-libs
+  visiblename: lua5.1-libs
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2
+  visiblename: lua5.2
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-dbg
+  visiblename: lua5.2-dbg
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-dev
+  visiblename: lua5.2-dev
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-doc
+  visiblename: lua5.2-doc
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-libs
+  visiblename: lua5.2-libs
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3
+  visiblename: lua5.3
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: arch
+  subrepo: extra
+  srcname: lua51
+  binname: lua51
+  visiblename: lua51
+  version: 5.1.5
+  origversion: 5.1.5-13
+  status: legacy
+  summary: Powerful lightweight programming language designed for extending applications
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-dbg
+  visiblename: lua5.3-dbg
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-dev
+  visiblename: lua5.3-dev
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-doc
+  visiblename: lua5.3-doc
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_19
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-libs
+  visiblename: lua5.3-libs
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1
+  visiblename: lua5.1
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications.
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-dbg
+  visiblename: lua5.1-dbg
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-dev
+  visiblename: lua5.1-dev
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-doc
+  visiblename: lua5.1-doc
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-libs
+  visiblename: lua5.1-libs
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2
+  visiblename: lua5.2
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-dbg
+  visiblename: lua5.2-dbg
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-dev
+  visiblename: lua5.2-dev
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-doc
+  visiblename: lua5.2-doc
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-libs
+  visiblename: lua5.2-libs
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3
+  visiblename: lua5.3
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-dbg
+  visiblename: lua5.3-dbg
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-dev
+  visiblename: lua5.3-dev
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-doc
+  visiblename: lua5.3-doc
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_20
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-libs
+  visiblename: lua5.3-libs
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1
+  visiblename: lua5.1
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications.
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: aosc
+  srcname: lang-lua/lua-5.3
+  binname: lua-5.3
+  visiblename: lua-5.3
+  version: 5.3.6
+  origversion: 1:5.3.6-3
+  status: legacy
+  summary: Powerful lightweight programming language designed for extending applications (5.3 branch)
+  maintainers:
+    - fallback-mnt-aosc@repology
+  categories:
+    - devel
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-dbg
+  visiblename: lua5.1-dbg
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-dev
+  visiblename: lua5.1-dev
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-doc
+  visiblename: lua5.1-doc
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-libs
+  visiblename: lua5.1-libs
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2
+  visiblename: lua5.2
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-dbg
+  visiblename: lua5.2-dbg
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-dev
+  visiblename: lua5.2-dev
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-doc
+  visiblename: lua5.2-doc
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-libs
+  visiblename: lua5.2-libs
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3
+  visiblename: lua5.3
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-dbg
+  visiblename: lua5.3-dbg
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-dev
+  visiblename: lua5.3-dev
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-doc
+  visiblename: lua5.3-doc
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_21
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-libs
+  visiblename: lua5.3-libs
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1
+  visiblename: lua5.1
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications.
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-dbg
+  visiblename: lua5.1-dbg
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-dev
+  visiblename: lua5.1-dev
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-doc
+  visiblename: lua5.1-doc
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-libs
+  visiblename: lua5.1-libs
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2
+  visiblename: lua5.2
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-dbg
+  visiblename: lua5.2-dbg
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-dev
+  visiblename: lua5.2-dev
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-doc
+  visiblename: lua5.2-doc
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-libs
+  visiblename: lua5.2-libs
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3
+  visiblename: lua5.3
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-dbg
+  visiblename: lua5.3-dbg
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-dev
+  visiblename: lua5.3-dev
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-doc
+  visiblename: lua5.3-doc
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_22
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-libs
+  visiblename: lua5.3-libs
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1
+  visiblename: lua5.1
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications.
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-dbg
+  visiblename: lua5.1-dbg
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-dev
+  visiblename: lua5.1-dev
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-doc
+  visiblename: lua5.1-doc
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-libs
+  visiblename: lua5.1-libs
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2
+  visiblename: lua5.2
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-dbg
+  visiblename: lua5.2-dbg
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-dev
+  visiblename: lua5.2-dev
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-doc
+  visiblename: lua5.2-doc
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-libs
+  visiblename: lua5.2-libs
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3
+  visiblename: lua5.3
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-dbg
+  visiblename: lua5.3-dbg
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-dev
+  visiblename: lua5.3-dev
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: centos_7
+  subrepo: os
+  srcname: lua
+  visiblename: lua
+  version: 5.1.4
+  origversion: 5.1.4-15.el7
+  status: outdated
+  summary: Powerful light-weight programming language
+  licenses:
+    - MIT
+  categories:
+    - Development/Languages
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-doc
+  visiblename: lua5.3-doc
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_23
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-libs
+  visiblename: lua5.3-libs
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_edge
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-libs
+  visiblename: lua5.3-libs
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_24
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1
+  visiblename: lua5.1
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications.
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_24
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-dbg
+  visiblename: lua5.1-dbg
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_24
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-dev
+  visiblename: lua5.1-dev
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_24
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-doc
+  visiblename: lua5.1-doc
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_24
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-libs
+  visiblename: lua5.1-libs
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_24
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2
+  visiblename: lua5.2
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_24
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-dbg
+  visiblename: lua5.2-dbg
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_24
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-dev
+  visiblename: lua5.2-dev
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_24
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-doc
+  visiblename: lua5.2-doc
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_24
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-libs
+  visiblename: lua5.2-libs
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_24
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3
+  visiblename: lua5.3
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_24
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-dbg
+  visiblename: lua5.3-dbg
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_24
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-dev
+  visiblename: lua5.3-dev
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_24
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-doc
+  visiblename: lua5.3-doc
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_3_24
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-libs
+  visiblename: lua5.3-libs
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_edge
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1
+  visiblename: lua5.1
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications.
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_edge
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-dbg
+  visiblename: lua5.1-dbg
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_edge
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-dev
+  visiblename: lua5.1-dev
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_edge
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-doc
+  visiblename: lua5.1-doc
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_edge
+  subrepo: main
+  srcname: lua5.1
+  binname: lua5.1-libs
+  visiblename: lua5.1-libs
+  version: 5.1.5
+  origversion: 5.1.5-r13
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_edge
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2
+  visiblename: lua5.2
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_edge
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-dbg
+  visiblename: lua5.2-dbg
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_edge
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-dev
+  visiblename: lua5.2-dev
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_edge
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-doc
+  visiblename: lua5.2-doc
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_edge
+  subrepo: main
+  srcname: lua5.2
+  binname: lua5.2-libs
+  visiblename: lua5.2-libs
+  version: 5.2.4
+  origversion: 5.2.4-r13
+  status: legacy
+  summary: Lua dynamic library runtime
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_edge
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3
+  visiblename: lua5.3
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_edge
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-dbg
+  visiblename: lua5.3-dbg
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language (debug symbols)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_edge
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-dev
+  visiblename: lua5.3-dev
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language (development files)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: alpine_edge
+  subrepo: main
+  srcname: lua5.3
+  binname: lua5.3-doc
+  visiblename: lua5.3-doc
+  version: 5.3.6
+  origversion: 5.3.6-r6
+  status: legacy
+  summary: Powerful light-weight programming language (documentation)
+  maintainers:
+    - ncopa@alpinelinux.org
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: xrepo
+  srcname: lua
+  visiblename: lua
+  version: 5.4.3
+  origversion: null
+  status: legacy
+  summary: A powerful, efficient, lightweight, embeddable scripting language.
+  vulnerable: true
+- repo: alt_p11
+  srcname: lua5.1
+  binnames:
+    - liblua5.1
+    - liblua5.1-compat-devel
+    - liblua5.1-debuginfo
+    - liblua5.1-devel
+    - liblua5.1-devel-static
+    - liblua5.1-preinstall
+    - lua5.1
+    - lua5.1-debuginfo
+    - lua5.1-doc
+  visiblename: lua5.1
+  version: 5.1.5
+  origversion: 5.1.5-alt21
+  status: legacy
+  summary: Embeddable programming language
+  maintainers:
+    - vseleznv@altlinux.org
+  licenses:
+    - MIT
+  categories:
+    - Development/Other
+  vulnerable: true
+- repo: apertis_v2024
+  subrepo: v2024/development
   srcname: lua5.1
   binnames:
     - lua5.1-doc
@@ -3722,2004 +5705,6 @@
   maintainers:
     - packages@qa.debian.org
   vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2
-  visiblename: lua5.2
-  version: 5.2.4
-  origversion: 5.2.4-r10
-  status: legacy
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-dev
-  visiblename: lua5.2-dev
-  version: 5.2.4
-  origversion: 5.2.4-r10
-  status: legacy
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-doc
-  visiblename: lua5.2-doc
-  version: 5.2.4
-  origversion: 5.2.4-r10
-  status: legacy
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-libs
-  visiblename: lua5.2-libs
-  version: 5.2.4
-  origversion: 5.2.4-r10
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-dbg
-  visiblename: lua5.2-dbg
-  version: 5.2.4
-  origversion: 5.2.4-r10
-  status: legacy
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-dbg
-  visiblename: lua5.3-dbg
-  version: 5.3.6
-  origversion: 5.3.6-r4
-  status: legacy
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3
-  visiblename: lua5.3
-  version: 5.3.6
-  origversion: 5.3.6-r4
-  status: legacy
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-doc
-  visiblename: lua5.3-doc
-  version: 5.3.6
-  origversion: 5.3.6-r4
-  status: legacy
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-libs
-  visiblename: lua5.3-libs
-  version: 5.3.6
-  origversion: 5.3.6-r4
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-dev
-  visiblename: lua5.3-dev
-  version: 5.3.6
-  origversion: 5.3.6-r4
-  status: legacy
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-dev
-  visiblename: lua5.1-dev
-  version: 5.1.5
-  origversion: 5.1.5-r11
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: apertis_v2025
-  subrepo: v2025/development
-  srcname: lua5.4
-  binnames:
-    - lua5.4
-    - liblua5.4-dev
-    - liblua5.4-0
-    - liblua5.4-0-dbg
-  visiblename: lua5.4
-  version: 5.4.4
-  origversion: 5.4.4-3+deb12u1+apertis1
-  status: outdated
-  maintainers:
-    - pkg-lua-devel@lists.alioth.debian.org
-    - sgolovan@debian.org
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-doc
-  visiblename: lua5.1-doc
-  version: 5.1.5
-  origversion: 5.1.5-r11
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1
-  visiblename: lua5.1
-  version: 5.1.5
-  origversion: 5.1.5-r11
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications.
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: apertis_v2025
-  subrepo: v2025/target
-  srcname: lua5.2
-  binnames:
-    - lua5.2-doc
-    - lua5.2
-    - liblua5.2-dev
-    - liblua5.2-0
-  visiblename: lua5.2
-  version: 5.2.4
-  origversion: 5.2.4-3+apertis2
-  status: legacy
-  maintainers:
-    - pkg-lua-devel@lists.alioth.debian.org
-    - jbelmonte@debian.org
-    - vseva@debian.org
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-dbg
-  visiblename: lua5.1-dbg
-  version: 5.1.5
-  origversion: 5.1.5-r11
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_17
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-libs
-  visiblename: lua5.1-libs
-  version: 5.1.5
-  origversion: 5.1.5-r11
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1
-  visiblename: lua5.1
-  version: 5.1.5
-  origversion: 5.1.5-r12
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications.
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-dbg
-  visiblename: lua5.1-dbg
-  version: 5.1.5
-  origversion: 5.1.5-r12
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-dev
-  visiblename: lua5.1-dev
-  version: 5.1.5
-  origversion: 5.1.5-r12
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-doc
-  visiblename: lua5.1-doc
-  version: 5.1.5
-  origversion: 5.1.5-r12
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-libs
-  visiblename: lua5.1-libs
-  version: 5.1.5
-  origversion: 5.1.5-r12
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2
-  visiblename: lua5.2
-  version: 5.2.4
-  origversion: 5.2.4-r12
-  status: legacy
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-dbg
-  visiblename: lua5.2-dbg
-  version: 5.2.4
-  origversion: 5.2.4-r12
-  status: legacy
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-dev
-  visiblename: lua5.2-dev
-  version: 5.2.4
-  origversion: 5.2.4-r12
-  status: legacy
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-doc
-  visiblename: lua5.2-doc
-  version: 5.2.4
-  origversion: 5.2.4-r12
-  status: legacy
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-libs
-  visiblename: lua5.2-libs
-  version: 5.2.4
-  origversion: 5.2.4-r12
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3
-  visiblename: lua5.3
-  version: 5.3.6
-  origversion: 5.3.6-r5
-  status: legacy
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-dbg
-  visiblename: lua5.3-dbg
-  version: 5.3.6
-  origversion: 5.3.6-r5
-  status: legacy
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-dev
-  visiblename: lua5.3-dev
-  version: 5.3.6
-  origversion: 5.3.6-r5
-  status: legacy
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-doc
-  visiblename: lua5.3-doc
-  version: 5.3.6
-  origversion: 5.3.6-r5
-  status: legacy
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_18
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-libs
-  visiblename: lua5.3-libs
-  version: 5.3.6
-  origversion: 5.3.6-r5
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1
-  visiblename: lua5.1
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications.
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-dbg
-  visiblename: lua5.1-dbg
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-dev
-  visiblename: lua5.1-dev
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-doc
-  visiblename: lua5.1-doc
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-libs
-  visiblename: lua5.1-libs
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2
-  visiblename: lua5.2
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-dbg
-  visiblename: lua5.2-dbg
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-dev
-  visiblename: lua5.2-dev
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-doc
-  visiblename: lua5.2-doc
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-libs
-  visiblename: lua5.2-libs
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3
-  visiblename: lua5.3
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-dbg
-  visiblename: lua5.3-dbg
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-dev
-  visiblename: lua5.3-dev
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-doc
-  visiblename: lua5.3-doc
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_19
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-libs
-  visiblename: lua5.3-libs
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1
-  visiblename: lua5.1
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications.
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: artix
-  subrepo: world
-  srcname: lua52
-  binname: lua52
-  visiblename: lua52
-  version: 5.2.4
-  origversion: 5.2.4-8
-  status: legacy
-  summary: Powerful lightweight programming language designed for extending applications
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-dbg
-  visiblename: lua5.1-dbg
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-dev
-  visiblename: lua5.1-dev
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-doc
-  visiblename: lua5.1-doc
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-libs
-  visiblename: lua5.1-libs
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2
-  visiblename: lua5.2
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-dbg
-  visiblename: lua5.2-dbg
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-dev
-  visiblename: lua5.2-dev
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-doc
-  visiblename: lua5.2-doc
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-libs
-  visiblename: lua5.2-libs
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3
-  visiblename: lua5.3
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-dbg
-  visiblename: lua5.3-dbg
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-dev
-  visiblename: lua5.3-dev
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-doc
-  visiblename: lua5.3-doc
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_20
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-libs
-  visiblename: lua5.3-libs
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1
-  visiblename: lua5.1
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications.
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-dbg
-  visiblename: lua5.1-dbg
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: cygwin
-  srcname: lua
-  binname: liblua5.4
-  visiblename: liblua5.4
-  version: 5.4.4
-  origversion: 5.4.4-1
-  status: outdated
-  summary: Lua programming language interpreter
-  maintainers:
-    - lemures.lemniscati@cygwin
-  categories:
-    - Interpreters
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-dev
-  visiblename: lua5.1-dev
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-libs
-  visiblename: lua5.3-libs
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-doc
-  visiblename: lua5.1-doc
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-libs
-  visiblename: lua5.1-libs
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: cygwin
-  srcname: lua5.1
-  binname: lua5.1
-  visiblename: lua5.1
-  version: 5.1.5
-  origversion: 5.1.5-3
-  status: legacy
-  summary: Lua programming language interpreter
-  maintainers:
-    - orphaned@cygwin
-  categories:
-    - Interpreters
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2
-  visiblename: lua5.2
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-dbg
-  visiblename: lua5.2-dbg
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-dev
-  visiblename: lua5.2-dev
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-doc
-  visiblename: lua5.2-doc
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-libs
-  visiblename: lua5.2-libs
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3
-  visiblename: lua5.3
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-dbg
-  visiblename: lua5.3-dbg
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-dev
-  visiblename: lua5.3-dev
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_21
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-doc
-  visiblename: lua5.3-doc
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1
-  visiblename: lua5.1
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications.
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-dbg
-  visiblename: lua5.1-dbg
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-dev
-  visiblename: lua5.1-dev
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: cygwin
-  srcname: lua
-  binname: lua
-  visiblename: lua
-  version: 5.4.4
-  origversion: 5.4.4-1
-  status: outdated
-  summary: Lua programming language interpreter
-  maintainers:
-    - lemures.lemniscati@cygwin
-  categories:
-    - Interpreters
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-doc
-  visiblename: lua5.1-doc
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-libs
-  visiblename: lua5.1-libs
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2
-  visiblename: lua5.2
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-dbg
-  visiblename: lua5.2-dbg
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-dev
-  visiblename: lua5.2-dev
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-doc
-  visiblename: lua5.2-doc
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-libs
-  visiblename: lua5.2-libs
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3
-  visiblename: lua5.3
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-dbg
-  visiblename: lua5.3-dbg
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-dev
-  visiblename: lua5.3-dev
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-doc
-  visiblename: lua5.3-doc
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_22
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-libs
-  visiblename: lua5.3-libs
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1
-  visiblename: lua5.1
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications.
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-dbg
-  visiblename: lua5.1-dbg
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-dev
-  visiblename: lua5.1-dev
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-doc
-  visiblename: lua5.1-doc
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-libs
-  visiblename: lua5.1-libs
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2
-  visiblename: lua5.2
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-dbg
-  visiblename: lua5.2-dbg
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-dev
-  visiblename: lua5.2-dev
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-doc
-  visiblename: lua5.2-doc
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-libs
-  visiblename: lua5.2-libs
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3
-  visiblename: lua5.3
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-dbg
-  visiblename: lua5.3-dbg
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-dev
-  visiblename: lua5.3-dev
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-doc
-  visiblename: lua5.3-doc
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_23
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-libs
-  visiblename: lua5.3-libs
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_24
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1
-  visiblename: lua5.1
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications.
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_24
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-dbg
-  visiblename: lua5.1-dbg
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_24
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-dev
-  visiblename: lua5.1-dev
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_24
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-doc
-  visiblename: lua5.1-doc
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_24
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-libs
-  visiblename: lua5.1-libs
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_24
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2
-  visiblename: lua5.2
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_24
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-dbg
-  visiblename: lua5.2-dbg
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_24
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-dev
-  visiblename: lua5.2-dev
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_24
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-doc
-  visiblename: lua5.2-doc
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_24
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-libs
-  visiblename: lua5.2-libs
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_24
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3
-  visiblename: lua5.3
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_24
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-dbg
-  visiblename: lua5.3-dbg
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_24
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-dev
-  visiblename: lua5.3-dev
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_24
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-doc
-  visiblename: lua5.3-doc
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_3_24
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-libs
-  visiblename: lua5.3-libs
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_edge
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1
-  visiblename: lua5.1
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications.
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_edge
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-dbg
-  visiblename: lua5.1-dbg
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_edge
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-dev
-  visiblename: lua5.1-dev
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_edge
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-doc
-  visiblename: lua5.1-doc
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_edge
-  subrepo: main
-  srcname: lua5.1
-  binname: lua5.1-libs
-  visiblename: lua5.1-libs
-  version: 5.1.5
-  origversion: 5.1.5-r13
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_edge
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2
-  visiblename: lua5.2
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_edge
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-dbg
-  visiblename: lua5.2-dbg
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_edge
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-dev
-  visiblename: lua5.2-dev
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_edge
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-doc
-  visiblename: lua5.2-doc
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_edge
-  subrepo: main
-  srcname: lua5.2
-  binname: lua5.2-libs
-  visiblename: lua5.2-libs
-  version: 5.2.4
-  origversion: 5.2.4-r13
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_edge
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3
-  visiblename: lua5.3
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_edge
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-dbg
-  visiblename: lua5.3-dbg
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language (debug symbols)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_edge
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-dev
-  visiblename: lua5.3-dev
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language (development files)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_edge
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-doc
-  visiblename: lua5.3-doc
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Powerful light-weight programming language (documentation)
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alpine_edge
-  subrepo: main
-  srcname: lua5.3
-  binname: lua5.3-libs
-  visiblename: lua5.3-libs
-  version: 5.3.6
-  origversion: 5.3.6-r6
-  status: legacy
-  summary: Lua dynamic library runtime
-  maintainers:
-    - ncopa@alpinelinux.org
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: alt_p11
-  srcname: lua5.1
-  binnames:
-    - liblua5.1
-    - liblua5.1-compat-devel
-    - liblua5.1-debuginfo
-    - liblua5.1-devel
-    - liblua5.1-devel-static
-    - liblua5.1-preinstall
-    - lua5.1
-    - lua5.1-debuginfo
-    - lua5.1-doc
-  visiblename: lua5.1
-  version: 5.1.5
-  origversion: 5.1.5-alt21
-  status: legacy
-  summary: Embeddable programming language
-  maintainers:
-    - vseleznv@altlinux.org
-  licenses:
-    - MIT
-  categories:
-    - Development/Other
-  vulnerable: true
 - repo: alt_p11
   srcname: lua5.3
   binnames:
@@ -5787,13 +5772,6 @@
     - MIT
   categories:
     - Development/Other
-  vulnerable: true
-- repo: conancenter
-  srcname: lua
-  visiblename: lua
-  version: 5.3.6
-  origversion: null
-  status: legacy
   vulnerable: true
 - repo: amazon_1
   subrepo: main
@@ -5869,19 +5847,6 @@
   categories:
     - devel
   vulnerable: true
-- repo: aosc
-  srcname: lang-lua/lua-5.3
-  binname: lua-5.3
-  visiblename: lua-5.3
-  version: 5.3.6
-  origversion: 1:5.3.6-3
-  status: legacy
-  summary: Powerful lightweight programming language designed for extending applications (5.3 branch)
-  maintainers:
-    - fallback-mnt-aosc@repology
-  categories:
-    - devel
-  vulnerable: true
 - repo: apertis_v2023
   subrepo: v2023/development
   srcname: lua5.1
@@ -5950,22 +5915,6 @@
   vulnerable: true
 - repo: apertis_v2024
   subrepo: v2024/development
-  srcname: lua5.1
-  binnames:
-    - lua5.1-doc
-    - lua5.1
-    - liblua5.1-0-dev
-    - liblua5.1-0
-    - liblua5.1-0-dbg
-  visiblename: lua5.1
-  version: 5.1.5
-  origversion: 5.1.5-9+apertis0
-  status: legacy
-  maintainers:
-    - packages@qa.debian.org
-  vulnerable: true
-- repo: apertis_v2024
-  subrepo: v2024/development
   srcname: lua5.4
   binnames:
     - lua5.4
@@ -6012,6 +5961,55 @@
   maintainers:
     - pkg-lua-devel@lists.alioth.debian.org
     - ondrej@debian.org
+  vulnerable: true
+- repo: apertis_v2025
+  subrepo: v2025/development
+  srcname: lua5.1
+  binnames:
+    - lua5.1-doc
+    - lua5.1
+    - liblua5.1-0-dev
+    - liblua5.1-0
+    - liblua5.1-0-dbg
+  visiblename: lua5.1
+  version: 5.1.5
+  origversion: 5.1.5-9+apertis0
+  status: legacy
+  maintainers:
+    - packages@qa.debian.org
+  vulnerable: true
+- repo: apertis_v2025
+  subrepo: v2025/development
+  srcname: lua5.4
+  binnames:
+    - lua5.4
+    - liblua5.4-dev
+    - liblua5.4-0
+    - liblua5.4-0-dbg
+  visiblename: lua5.4
+  version: 5.4.4
+  origversion: 5.4.4-3+deb12u1+apertis1
+  status: outdated
+  maintainers:
+    - pkg-lua-devel@lists.alioth.debian.org
+    - sgolovan@debian.org
+  vulnerable: true
+- repo: apertis_v2025
+  subrepo: v2025/target
+  srcname: lua5.2
+  binnames:
+    - lua5.2-doc
+    - lua5.2
+    - liblua5.2-dev
+    - liblua5.2-0
+  visiblename: lua5.2
+  version: 5.2.4
+  origversion: 5.2.4-3+apertis2
+  status: legacy
+  maintainers:
+    - pkg-lua-devel@lists.alioth.debian.org
+    - jbelmonte@debian.org
+    - vseva@debian.org
   vulnerable: true
 - repo: apertis_v2025
   subrepo: v2025/target
@@ -6129,18 +6127,6 @@
   vulnerable: true
 - repo: arch
   subrepo: extra
-  srcname: lua51
-  binname: lua51
-  visiblename: lua51
-  version: 5.1.5
-  origversion: 5.1.5-13
-  status: legacy
-  summary: Powerful lightweight programming language designed for extending applications
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: arch
-  subrepo: extra
   srcname: lua52
   binname: lua52
   visiblename: lua52
@@ -6191,41 +6177,27 @@
   vulnerable: true
 - repo: artix
   subrepo: world
-  srcname: lua53
-  binname: lua53
-  visiblename: lua53
-  version: 5.3.6
-  origversion: 5.3.6-4
+  srcname: lua52
+  binname: lua52
+  visiblename: lua52
+  version: 5.2.4
+  origversion: 5.2.4-8
   status: legacy
   summary: Powerful lightweight programming language designed for extending applications
   licenses:
     - MIT
   vulnerable: true
-- repo: centos_6
-  subrepo: os
-  srcname: lua
-  visiblename: lua
-  version: 5.1.4
-  origversion: 5.1.4-4.1.el6
-  status: outdated
-  summary: Powerful light-weight programming language
+- repo: artix
+  subrepo: world
+  srcname: lua51
+  binname: lua51
+  visiblename: lua51
+  version: 5.1.5
+  origversion: 5.1.5-13
+  status: legacy
+  summary: Powerful lightweight programming language designed for extending applications
   licenses:
     - MIT
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: centos_7
-  subrepo: os
-  srcname: lua
-  visiblename: lua
-  version: 5.1.4
-  origversion: 5.1.4-15.el7
-  status: outdated
-  summary: Powerful light-weight programming language
-  licenses:
-    - MIT
-  categories:
-    - Development/Languages
   vulnerable: true
 - repo: centos_8
   subrepo: BaseOS
@@ -6316,19 +6288,6 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: cygwin
-  srcname: lua5.1
-  binname: lua5.1-debuginfo
-  visiblename: lua5.1-debuginfo
-  version: 5.1.5
-  origversion: 5.1.5-3
-  status: legacy
-  summary: Lua programming language interpreter
-  maintainers:
-    - orphaned@cygwin
-  categories:
-    - Debug
-  vulnerable: true
 - repo: centos_stream_9
   subrepo: BaseOS
   srcname: lua
@@ -6373,6 +6332,17 @@
   categories:
     - Unspecified
   vulnerable: true
+- repo: crux_37
+  subrepo: opt
+  srcname: lua53
+  visiblename: lua53
+  version: 5.3.6
+  origversion: null
+  status: legacy
+  summary: A programming language designed for extending applications
+  maintainers:
+    - tbier@posteo.de
+  vulnerable: true
 - repo: chimera
   subrepo: main
   srcname: lua5.1
@@ -6396,6 +6366,14 @@
   summary: Lua scripting language 5.1.x (development files)
   licenses:
     - MIT
+  vulnerable: true
+- repo: chocolatey
+  binname: lua51
+  visiblename: lua 51 Binaries
+  version: 5.1.5
+  origversion: null
+  status: legacy
+  summary: LuaBinaries is a distribution of the Lua libraries and executables
   vulnerable: true
 - repo: chimera
   subrepo: main
@@ -6433,38 +6411,6 @@
   licenses:
     - MIT
   vulnerable: true
-- repo: devuan_4_0
-  subrepo: chimaera/main
-  srcname: lua5.2
-  binnames:
-    - lua5.2-doc
-    - lua5.2
-    - liblua5.2-dev
-    - liblua5.2-0
-    - liblua5.2-0-dbg
-  visiblename: lua5.2
-  version: 5.2.4
-  origversion: 5.2.4-1.1
-  status: legacy
-  maintainers:
-    - gareuselesinge@debian.org
-    - jbelmonte@debian.org
-  categories:
-    - interpreters
-  vulnerable: true
-- repo: cygwin
-  srcname: lua
-  binname: liblua5.3
-  visiblename: liblua5.3
-  version: 5.4.4
-  origversion: 5.4.4-1
-  status: outdated
-  summary: Lua programming language interpreter
-  maintainers:
-    - lemures.lemniscati@cygwin
-  categories:
-    - Interpreters
-  vulnerable: true
 - repo: chocolatey
   binname: Lua
   visiblename: Lua For Windows
@@ -6472,14 +6418,6 @@
   origversion: null
   status: legacy
   summary: Unofficial package. Lua for Windows is a 'batteries included environment' for the Lua scripting language on Windows.
-  vulnerable: true
-- repo: chocolatey
-  binname: lua51
-  visiblename: lua 51 Binaries
-  version: 5.1.5
-  origversion: null
-  status: legacy
-  summary: LuaBinaries is a distribution of the Lua libraries and executables
   vulnerable: true
 - repo: chocolatey
   binname: lua52
@@ -6496,6 +6434,13 @@
   origversion: null
   status: outdated
   summary: LuaBinaries is a distribution of the Lua libraries and executables
+  vulnerable: true
+- repo: conancenter
+  srcname: lua
+  visiblename: lua
+  version: 5.3.6
+  origversion: null
+  status: legacy
   vulnerable: true
 - repo: conancenter
   srcname: lua
@@ -6520,17 +6465,6 @@
   srcname: lua52
   visiblename: lua52
   version: 5.2.4
-  origversion: null
-  status: legacy
-  summary: A programming language designed for extending applications
-  maintainers:
-    - tbier@posteo.de
-  vulnerable: true
-- repo: crux_37
-  subrepo: opt
-  srcname: lua53
-  visiblename: lua53
-  version: 5.3.6
   origversion: null
   status: legacy
   summary: A programming language designed for extending applications
@@ -6587,19 +6521,6 @@
   srcname: lua
   binname: liblua5.3
   visiblename: liblua5.3
-  version: 5.3.6
-  origversion: 5.3.6-4
-  status: legacy
-  summary: Lua programming language interpreter
-  maintainers:
-    - lemures.lemniscati@cygwin
-  categories:
-    - Interpreters
-  vulnerable: true
-- repo: cygwin
-  srcname: lua
-  binname: liblua5.4
-  visiblename: liblua5.4
   version: 5.3.6
   origversion: 5.3.6-4
   status: legacy
@@ -6648,23 +6569,44 @@
   categories:
     - Interpreters
   vulnerable: true
-- repo: devuan_4_0
-  subrepo: chimaera/main
-  srcname: lua5.3
-  binnames:
-    - lua5.3
-    - liblua5.3-dev
-    - liblua5.3-0
-    - liblua5.3-0-dbg
-  visiblename: lua5.3
-  version: 5.3.3
-  origversion: 5.3.3-1.1+deb11u1
+- repo: cygwin
+  srcname: lua
+  binname: liblua5.3
+  visiblename: liblua5.3
+  version: 5.4.4
+  origversion: 5.4.4-1
   status: outdated
+  summary: Lua programming language interpreter
   maintainers:
-    - gareuselesinge@debian.org
-    - ondrej@debian.org
+    - lemures.lemniscati@cygwin
   categories:
-    - misc
+    - Interpreters
+  vulnerable: true
+- repo: cygwin
+  srcname: lua
+  binname: liblua5.4
+  visiblename: liblua5.4
+  version: 5.4.4
+  origversion: 5.4.4-1
+  status: outdated
+  summary: Lua programming language interpreter
+  maintainers:
+    - lemures.lemniscati@cygwin
+  categories:
+    - Interpreters
+  vulnerable: true
+- repo: cygwin
+  srcname: lua
+  binname: lua
+  visiblename: lua
+  version: 5.4.4
+  origversion: 5.4.4-1
+  status: outdated
+  summary: Lua programming language interpreter
+  maintainers:
+    - lemures.lemniscati@cygwin
+  categories:
+    - Interpreters
   vulnerable: true
 - repo: cygwin
   srcname: lua
@@ -6678,6 +6620,45 @@
     - lemures.lemniscati@cygwin
   categories:
     - Debug
+  vulnerable: true
+- repo: cygwin
+  srcname: lua5.1
+  binname: lua5.1
+  visiblename: lua5.1
+  version: 5.1.5
+  origversion: 5.1.5-3
+  status: legacy
+  summary: Lua programming language interpreter
+  maintainers:
+    - orphaned@cygwin
+  categories:
+    - Interpreters
+  vulnerable: true
+- repo: cygwin
+  srcname: lua5.1
+  binname: lua5.1-debuginfo
+  visiblename: lua5.1-debuginfo
+  version: 5.1.5
+  origversion: 5.1.5-3
+  status: legacy
+  summary: Lua programming language interpreter
+  maintainers:
+    - orphaned@cygwin
+  categories:
+    - Debug
+  vulnerable: true
+- repo: cygwin
+  srcname: lua5.1
+  binname: lua5.1-devel
+  visiblename: lua5.1-devel
+  version: 5.1.5
+  origversion: 5.1.5-3
+  status: legacy
+  summary: Lua programming language interpreter
+  maintainers:
+    - orphaned@cygwin
+  categories:
+    - Interpreters
   vulnerable: true
 - repo: cygwin
   srcname: mingw64-i686-lua
@@ -6815,24 +6796,6 @@
     - vseva@debian.org
   categories:
     - interpreters
-  vulnerable: true
-- repo: devuan_4_0
-  subrepo: chimaera/main
-  srcname: lua5.4
-  binnames:
-    - lua5.4
-    - liblua5.4-dev
-    - liblua5.4-0
-    - liblua5.4-0-dbg
-  visiblename: lua5.4
-  version: 5.4.2
-  origversion: 5.4.2-2
-  status: outdated
-  maintainers:
-    - pkg-lua-devel@lists.alioth.debian.org
-    - sgolovan@debian.org
-  categories:
-    - misc
   vulnerable: true
 - repo: debian_12
   subrepo: bookworm/main
@@ -6979,6 +6942,25 @@
   categories:
     - misc
   vulnerable: true
+- repo: deepin_25
+  subrepo: main
+  srcname: lua5.1
+  binnames:
+    - lua5.1-doc
+    - lua5.1
+    - liblua5.1-0-dev
+    - liblua5.1-0
+    - liblua5.1-0-dbg
+  visiblename: lua5.1
+  version: 5.1.5-8.1
+  origversion: 5.1.5-8.1-deepin1
+  status: legacy
+  maintainers:
+    - jbelmonte@debian.org
+    - gareuselesinge@debian.org
+  categories:
+    - interpreters
+  vulnerable: true
 - repo: debian_unstable
   subrepo: sid/main
   srcname: lua5.1
@@ -7070,6 +7052,19 @@
     - jbelmonte@debian.org
   categories:
     - interpreters
+  vulnerable: true
+- repo: eurolinux_8
+  subrepo: baseos
+  srcname: lua
+  visiblename: lua
+  version: 5.3.4
+  origversion: 5.3.4-11.el8
+  status: outdated
+  summary: Powerful light-weight programming language
+  licenses:
+    - MIT
+  categories:
+    - Development/Languages
   vulnerable: true
 - repo: deepin_unstable
   subrepo: main
@@ -7163,25 +7158,6 @@
   vulnerable: true
 - repo: deepin_25
   subrepo: main
-  srcname: lua5.1
-  binnames:
-    - lua5.1-doc
-    - lua5.1
-    - liblua5.1-0-dev
-    - liblua5.1-0
-    - liblua5.1-0-dbg
-  visiblename: lua5.1
-  version: 5.1.5-8.1
-  origversion: 5.1.5-8.1-deepin1
-  status: legacy
-  maintainers:
-    - jbelmonte@debian.org
-    - gareuselesinge@debian.org
-  categories:
-    - interpreters
-  vulnerable: true
-- repo: deepin_25
-  subrepo: main
   srcname: lua5.2
   binnames:
     - lua5.2-doc
@@ -7235,6 +7211,127 @@
     - gareuselesinge@debian.org
   categories:
     - interpreters
+  vulnerable: true
+- repo: devuan_4_0
+  subrepo: chimaera/main
+  srcname: lua5.2
+  binnames:
+    - lua5.2-doc
+    - lua5.2
+    - liblua5.2-dev
+    - liblua5.2-0
+    - liblua5.2-0-dbg
+  visiblename: lua5.2
+  version: 5.2.4
+  origversion: 5.2.4-1.1
+  status: legacy
+  maintainers:
+    - gareuselesinge@debian.org
+    - jbelmonte@debian.org
+  categories:
+    - interpreters
+  vulnerable: true
+- repo: devuan_4_0
+  subrepo: chimaera/main
+  srcname: lua5.3
+  binnames:
+    - lua5.3
+    - liblua5.3-dev
+    - liblua5.3-0
+    - liblua5.3-0-dbg
+  visiblename: lua5.3
+  version: 5.3.3
+  origversion: 5.3.3-1.1+deb11u1
+  status: outdated
+  maintainers:
+    - gareuselesinge@debian.org
+    - ondrej@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: devuan_4_0
+  subrepo: chimaera/main
+  srcname: lua5.4
+  binnames:
+    - lua5.4
+    - liblua5.4-dev
+    - liblua5.4-0
+    - liblua5.4-0-dbg
+  visiblename: lua5.4
+  version: 5.4.2
+  origversion: 5.4.2-2
+  status: outdated
+  maintainers:
+    - pkg-lua-devel@lists.alioth.debian.org
+    - sgolovan@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: devuan_unstable
+  subrepo: unstable/main
+  srcname: lua5.1
+  binnames:
+    - lua5.1-doc
+    - lua5.1
+    - liblua5.1-0-dev
+    - liblua5.1-0
+  visiblename: lua5.1
+  version: 5.1.5
+  origversion: 5.1.5-12
+  status: legacy
+  maintainers:
+    - pkg-lua-devel@lists.alioth.debian.org
+    - bage@debian.org
+  categories:
+    - interpreters
+  vulnerable: true
+- repo: nix_stable_24_11
+  srcname: lua5_3_compat
+  visiblename: lua
+  version: 5.3.6
+  origversion: null
+  status: legacy
+  summary: Powerful, fast, lightweight, embeddable scripting language
+  maintainers:
+    - fallback-mnt-nix@repology
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: devuan_unstable
+  subrepo: unstable/main
+  srcname: lua5.2
+  binnames:
+    - lua5.2-doc
+    - lua5.2
+    - liblua5.2-dev
+    - liblua5.2-0
+  visiblename: lua5.2
+  version: 5.2.4
+  origversion: 5.2.4-4
+  status: legacy
+  maintainers:
+    - pkg-lua-devel@lists.alioth.debian.org
+    - jbelmonte@debian.org
+    - vseva@debian.org
+  categories:
+    - interpreters
+  vulnerable: true
+- repo: devuan_unstable
+  subrepo: unstable/main
+  srcname: lua5.3
+  binnames:
+    - lua5.3
+    - liblua5.3-dev
+    - liblua5.3-0
+  visiblename: lua5.3
+  version: 5.3.6
+  origversion: 5.3.6-5
+  status: legacy
+  maintainers:
+    - pkg-lua-devel@lists.alioth.debian.org
+    - ondrej@debian.org
+  categories:
+    - misc
   vulnerable: true
 - repo: epel_8
   srcname: compat-lua
@@ -7297,32 +7394,6 @@
   categories:
     - Development/Languages
   vulnerable: true
-- repo: eurolinux_8
-  subrepo: baseos
-  srcname: lua
-  visiblename: lua
-  version: 5.3.4
-  origversion: 5.3.4-11.el8
-  status: outdated
-  summary: Powerful light-weight programming language
-  licenses:
-    - MIT
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: eurolinux_8
-  subrepo: baseos
-  srcname: lua
-  visiblename: lua
-  version: 5.3.4
-  origversion: 5.3.4-12.el8
-  status: outdated
-  summary: Powerful light-weight programming language
-  licenses:
-    - MIT
-  categories:
-    - Development/Languages
-  vulnerable: true
 - repo: eurolinux_9
   subrepo: baseos
   srcname: lua
@@ -7337,46 +7408,6 @@
   version: 5.4.2
   origversion: 5.4.2-4.el9
   status: legacy
-  summary: Powerful light-weight programming language
-  licenses:
-    - MIT
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: eurolinux_9
-  subrepo: baseos
-  srcname: lua
-  binnames:
-    - lua
-    - lua-devel
-    - lua-libs
-    - lua-static
-    - lua-debuginfo
-    - lua-debugsource
-  visiblename: lua
-  version: 5.4.2
-  origversion: 5.4.2-4.el9_0.3
-  status: legacy
-  summary: Powerful light-weight programming language
-  licenses:
-    - MIT
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: eurolinux_9
-  subrepo: baseos
-  srcname: lua
-  binnames:
-    - lua
-    - lua-devel
-    - lua-libs
-    - lua-static
-    - lua-debuginfo
-    - lua-debugsource
-  visiblename: lua
-  version: 5.4.4
-  origversion: 5.4.4-2.el9_1
-  status: outdated
   summary: Powerful light-weight programming language
   licenses:
     - MIT
@@ -7517,6 +7548,18 @@
   categories:
     - Unspecified
   vulnerable: true
+- repo: nix_stable_25_11
+  srcname: lua
+  visiblename: lua
+  version: 5.2.4
+  origversion: null
+  status: legacy
+  summary: Powerful, fast, lightweight, embeddable scripting language
+  maintainers:
+    - fallback-mnt-nix@repology
+  licenses:
+    - MIT
+  vulnerable: true
 - repo: fedora_42
   subrepo: release
   srcname: compat-lua
@@ -7638,23 +7681,6 @@
   categories:
     - dev-lang
   vulnerable: true
-- repo: kali_rolling
-  subrepo: main
-  srcname: lua5.3
-  binnames:
-    - lua5.3
-    - liblua5.3-dev
-    - liblua5.3-0
-  visiblename: lua5.3
-  version: 5.3.6
-  origversion: 5.3.6-4
-  status: legacy
-  maintainers:
-    - pkg-lua-devel@lists.alioth.debian.org
-    - ondrej@debian.org
-  categories:
-    - misc
-  vulnerable: true
 - repo: gentoo
   srcname: dev-lang/lua
   visiblename: dev-lang/lua
@@ -7668,18 +7694,6 @@
     - MIT
   categories:
     - dev-lang
-  vulnerable: true
-- repo: nix_stable_25_05
-  srcname: lua5_3_compat
-  visiblename: lua
-  version: 5.3.6
-  origversion: null
-  status: legacy
-  summary: Powerful, fast, lightweight, embeddable scripting language
-  maintainers:
-    - fallback-mnt-nix@repology
-  licenses:
-    - MIT
   vulnerable: true
 - repo: gnuguix
   srcname: lua
@@ -7707,6 +7721,18 @@
   origversion: null
   status: legacy
   summary: Embeddable scripting language
+  vulnerable: true
+- repo: nix_stable_25_11
+  srcname: lua5_3_compat
+  visiblename: lua
+  version: 5.3.6
+  origversion: null
+  status: legacy
+  summary: Powerful, fast, lightweight, embeddable scripting language
+  maintainers:
+    - fallback-mnt-nix@repology
+  licenses:
+    - MIT
   vulnerable: true
 - repo: haikuports_master
   srcname: dev-lang/lua
@@ -7783,6 +7809,23 @@
     - vseva@debian.org
   categories:
     - interpreters
+  vulnerable: true
+- repo: kali_rolling
+  subrepo: main
+  srcname: lua5.3
+  binnames:
+    - lua5.3
+    - liblua5.3-dev
+    - liblua5.3-0
+  visiblename: lua5.3
+  version: 5.3.6
+  origversion: 5.3.6-4
+  status: legacy
+  maintainers:
+    - pkg-lua-devel@lists.alioth.debian.org
+    - ondrej@debian.org
+  categories:
+    - misc
   vulnerable: true
 - repo: liguros_stable
   srcname: dev-lang/lua
@@ -7872,30 +7915,6 @@
   categories:
     - lang
   vulnerable: true
-- repo: manjaro_stable
-  subrepo: extra
-  srcname: lua52
-  binname: lua52
-  visiblename: lua52
-  version: 5.2.4
-  origversion: 5.2.4-5
-  status: legacy
-  summary: Powerful lightweight programming language designed for extending applications
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: manjaro_testing
-  subrepo: extra
-  srcname: lua52
-  binname: lua52
-  visiblename: lua52
-  version: 5.2.4
-  origversion: 5.2.4-6
-  status: legacy
-  summary: Powerful lightweight programming language designed for extending applications
-  licenses:
-    - MIT
-  vulnerable: true
 - repo: macports
   srcname: lang/lua
   binname: lua52
@@ -7927,6 +7946,18 @@
     - MIT
   categories:
     - lang
+  vulnerable: true
+- repo: nix_stable_25_05
+  srcname: lua
+  visiblename: lua
+  version: 5.2.4
+  origversion: null
+  status: legacy
+  summary: Powerful, fast, lightweight, embeddable scripting language
+  maintainers:
+    - fallback-mnt-nix@repology
+  licenses:
+    - MIT
   vulnerable: true
 - repo: mageia_9
   subrepo: core/release
@@ -8010,7 +8041,7 @@
   binname: lua53
   visiblename: lua53
   version: 5.3.6
-  origversion: 5.3.6-1
+  origversion: 5.3.6-4
   status: legacy
   summary: Powerful lightweight programming language designed for extending applications
   licenses:
@@ -8022,7 +8053,91 @@
   binname: lua51
   visiblename: lua51
   version: 5.1.5
-  origversion: 5.1.5-9
+  origversion: 5.1.5-13
+  status: legacy
+  summary: Powerful lightweight programming language designed for extending applications
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: manjaro_stable
+  subrepo: extra
+  srcname: lua52
+  binname: lua52
+  visiblename: lua52
+  version: 5.2.4
+  origversion: 5.2.4-8
+  status: legacy
+  summary: Powerful lightweight programming language designed for extending applications
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: manjaro_testing
+  subrepo: extra
+  srcname: lua52
+  binname: lua52
+  visiblename: lua52
+  version: 5.2.4
+  origversion: 5.2.4-8
+  status: legacy
+  summary: Powerful lightweight programming language designed for extending applications
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: manjaro_testing
+  subrepo: extra
+  srcname: lua51
+  binname: lua51
+  visiblename: lua51
+  version: 5.1.5
+  origversion: 5.1.5-13
+  status: legacy
+  summary: Powerful lightweight programming language designed for extending applications
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: manjaro_testing
+  subrepo: extra
+  srcname: lua53
+  binname: lua53
+  visiblename: lua53
+  version: 5.3.6
+  origversion: 5.3.6-4
+  status: legacy
+  summary: Powerful lightweight programming language designed for extending applications
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: manjaro_unstable
+  subrepo: extra
+  srcname: lua53
+  binname: lua53
+  visiblename: lua53
+  version: 5.3.6
+  origversion: 5.3.6-4
+  status: legacy
+  summary: Powerful lightweight programming language designed for extending applications
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: manjaro_unstable
+  subrepo: extra
+  srcname: lua51
+  binname: lua51
+  visiblename: lua51
+  version: 5.1.5
+  origversion: 5.1.5-13
+  status: legacy
+  summary: Powerful lightweight programming language designed for extending applications
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: manjaro_unstable
+  subrepo: extra
+  srcname: lua52
+  binname: lua52
+  visiblename: lua52
+  version: 5.2.4
+  origversion: 5.2.4-8
   status: legacy
   summary: Powerful lightweight programming language designed for extending applications
   licenses:
@@ -8051,30 +8166,6 @@
     - MIT
   vulnerable: true
 - repo: msys2_clangarm64
-  srcname: mingw-w64-lua51
-  binname: mingw-w64-clang-aarch64-lua51
-  visiblename: mingw-w64-clang-aarch64-lua51
-  version: 5.1.5
-  origversion: 5.1.5-6
-  status: legacy
-  summary: A powerful light-weight programming language designed for extending applications. Version 5.1.x (mingw-w64)
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: opensuse_leap_15_6
-  subrepo: main/oss
-  srcname: lua54
-  visiblename: lua54
-  version: 5.4.4
-  origversion: 5.4.4-bp156.2.6
-  status: outdated
-  summary: Small Embeddable Language with Procedural Syntax
-  licenses:
-    - GPL-3.0-or-later
-  categories:
-    - Development/Languages/Other
-  vulnerable: true
-- repo: msys2_clangarm64
   srcname: mingw-w64-lua53
   binname: mingw-w64-clang-aarch64-lua53
   visiblename: mingw-w64-clang-aarch64-lua53
@@ -8082,6 +8173,17 @@
   origversion: 5.3.6-6
   status: legacy
   summary: A powerful light-weight programming language designed for extending applications. Version 5.3.x (mingw-w64)
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: msys2_clangarm64
+  srcname: mingw-w64-lua51
+  binname: mingw-w64-clang-aarch64-lua51
+  visiblename: mingw-w64-clang-aarch64-lua51
+  version: 5.1.5
+  origversion: 5.1.5-6
+  status: legacy
+  summary: A powerful light-weight programming language designed for extending applications. Version 5.1.x (mingw-w64)
   licenses:
     - MIT
   vulnerable: true
@@ -8108,25 +8210,6 @@
   summary: A powerful light-weight programming language designed for extending applications. Version 5.3.x (mingw-w64)
   licenses:
     - MIT
-  vulnerable: true
-- repo: pardus_21
-  subrepo: main
-  srcname: lua5.1
-  binnames:
-    - lua5.1-doc
-    - lua5.1
-    - liblua5.1-0-dev
-    - liblua5.1-0
-    - liblua5.1-0-dbg
-  visiblename: lua5.1
-  version: 5.1.5
-  origversion: 5.1.5-8.1
-  status: legacy
-  maintainers:
-    - jbelmonte@debian.org
-    - gareuselesinge@debian.org
-  categories:
-    - interpreters
   vulnerable: true
 - repo: msys2_ucrt64
   srcname: mingw-w64-lua51
@@ -8186,43 +8269,7 @@
   licenses:
     - MIT
   vulnerable: true
-- repo: nix_stable_24_11
-  srcname: lua5_3_compat
-  visiblename: lua
-  version: 5.3.6
-  origversion: null
-  status: legacy
-  summary: Powerful, fast, lightweight, embeddable scripting language
-  maintainers:
-    - fallback-mnt-nix@repology
-  licenses:
-    - MIT
-  vulnerable: true
 - repo: nix_stable_25_05
-  srcname: lua
-  visiblename: lua
-  version: 5.2.4
-  origversion: null
-  status: legacy
-  summary: Powerful, fast, lightweight, embeddable scripting language
-  maintainers:
-    - fallback-mnt-nix@repology
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: nix_stable_25_11
-  srcname: lua
-  visiblename: lua
-  version: 5.2.4
-  origversion: null
-  status: legacy
-  summary: Powerful, fast, lightweight, embeddable scripting language
-  maintainers:
-    - fallback-mnt-nix@repology
-  licenses:
-    - MIT
-  vulnerable: true
-- repo: nix_stable_25_11
   srcname: lua5_3_compat
   visiblename: lua
   version: 5.3.6
@@ -8318,6 +8365,18 @@
   licenses:
     - MIT
   vulnerable: true
+- repo: npackd_stable
+  srcname: lua
+  binname: lua
+  visiblename: Lua
+  version: 5.1.5.51
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT
+  categories:
+    - Development
+  vulnerable: true
 - repo: nix_unstable
   srcname: lua5_1
   visiblename: lua
@@ -8395,18 +8454,6 @@
   binname: lua
   visiblename: Lua
   version: 5.1.4.50
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: lua
-  binname: lua
-  visiblename: Lua
-  version: 5.1.5.51
   origversion: null
   status: legacy
   licenses:
@@ -8827,18 +8874,6 @@
   categories:
     - Development/Other
   vulnerable: true
-- repo: parabola
-  subrepo: extra
-  srcname: lua51
-  binname: lua51
-  visiblename: lua51
-  version: 5.1.5
-  origversion: 5.1.5-13
-  status: legacy
-  summary: Powerful lightweight programming language designed for extending applications
-  licenses:
-    - MIT
-  vulnerable: true
 - repo: openmandriva_6_0
   subrepo: unsupported/release
   srcname: lua5.1
@@ -8861,6 +8896,195 @@
   categories:
     - Development/Other
   vulnerable: true
+- repo: openmandriva_rolling
+  subrepo: unsupported/release
+  srcname: lua5.1
+  binnames:
+    - lua5.1
+    - lib64lua5.1
+    - lib64lua5.1-devel
+    - lib64lua5.1-static-devel
+    - lua5.1-debuginfo
+    - lua5.1-debugsource
+  visiblename: lua5.1
+  version: 5.1.5
+  origversion: 5.1.5-10
+  status: legacy
+  summary: Powerful, light-weight programming language
+  maintainers:
+    - bero@lindev.ch
+  licenses:
+    - MIT
+  categories:
+    - Development/Other
+  vulnerable: true
+- repo: pardus_21
+  subrepo: main
+  srcname: lua5.4
+  binnames:
+    - lua5.4
+    - liblua5.4-dev
+    - liblua5.4-0
+    - liblua5.4-0-dbg
+  visiblename: lua5.4
+  version: 5.4.2
+  origversion: 5.4.2-2
+  status: outdated
+  maintainers:
+    - pkg-lua-devel@lists.alioth.debian.org
+    - sgolovan@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: openwrt_24_10_x86_64
+  subrepo: base
+  srcname: feeds/base/package/utils/lua
+  binname: lua
+  visiblename: lua
+  version: 5.1.5
+  origversion: 5.1.5-r11
+  status: legacy
+  maintainers:
+    - jo@mein.io
+  categories:
+    - lang
+  vulnerable: true
+- repo: openmandriva_rolling
+  subrepo: main/release
+  srcname: lua5.2
+  binnames:
+    - lua5.2
+    - lib64lua5.2
+    - lib64lua5.2-devel
+    - lib64lua5.2-static-devel
+    - lua5.2-debuginfo
+    - lua5.2-debugsource
+  visiblename: lua5.2
+  version: 5.2.4
+  origversion: 5.2.4-5
+  status: legacy
+  summary: Old version of a powerful, light-weight programming language
+  maintainers:
+    - bero+massbuild@lindev.ch
+  licenses:
+    - MIT
+  categories:
+    - Development/Other
+  vulnerable: true
+- repo: openmandriva_rolling
+  subrepo: main/release
+  srcname: lua5.3
+  binnames:
+    - lua5.3
+    - lib64lua5.3_5.3
+    - lib64lua5.3-devel
+    - lib64lua5.3-static-devel
+    - lua5.3-debuginfo
+    - lua5.3-debugsource
+  visiblename: lua5.3
+  version: 5.3.6
+  origversion: 5.3.6-1
+  status: legacy
+  summary: Powerful, light-weight programming language (old version)
+  maintainers:
+    - bero+massbuild@lindev.ch
+  licenses:
+    - MIT
+  categories:
+    - Development/Other
+  vulnerable: true
+- repo: openmandriva_cooker
+  subrepo: unsupported/release
+  srcname: lua5.1
+  binnames:
+    - lua5.1
+    - lib64lua5.1
+    - lib64lua5.1-devel
+    - lib64lua5.1-static-devel
+    - lua5.1-debuginfo
+    - lua5.1-debugsource
+  visiblename: lua5.1
+  version: 5.1.5
+  origversion: 5.1.5-10
+  status: legacy
+  summary: Powerful, light-weight programming language
+  maintainers:
+    - bero@lindev.ch
+  licenses:
+    - MIT
+  categories:
+    - Development/Other
+  vulnerable: true
+- repo: openmandriva_cooker
+  subrepo: main/release
+  srcname: lua5.2
+  binnames:
+    - lua5.2
+    - lib64lua5.2
+    - lib64lua5.2-devel
+    - lib64lua5.2-static-devel
+    - lua5.2-debuginfo
+    - lua5.2-debugsource
+  visiblename: lua5.2
+  version: 5.2.4
+  origversion: 5.2.4-5
+  status: legacy
+  summary: Old version of a powerful, light-weight programming language
+  maintainers:
+    - bero+massbuild@lindev.ch
+  licenses:
+    - MIT
+  categories:
+    - Development/Other
+  vulnerable: true
+- repo: openmandriva_cooker
+  subrepo: main/release
+  srcname: lua5.3
+  binnames:
+    - lua5.3
+    - lib64lua5.3_5.3
+    - lib64lua5.3-devel
+    - lib64lua5.3-static-devel
+    - lua5.3-debuginfo
+    - lua5.3-debugsource
+  visiblename: lua5.3
+  version: 5.3.6
+  origversion: 5.3.6-1
+  status: legacy
+  summary: Powerful, light-weight programming language (old version)
+  maintainers:
+    - bero+massbuild@lindev.ch
+  licenses:
+    - MIT
+  categories:
+    - Development/Other
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: main/oss
+  srcname: lua51
+  visiblename: lua51
+  version: 5.1.5
+  origversion: 5.1.5-2.31
+  status: legacy
+  summary: Small Embeddable Language with Procedural Syntax
+  licenses:
+    - MIT
+  categories:
+    - Development/Languages/Other
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: main/oss
+  srcname: lua53
+  visiblename: lua53
+  version: 5.3.6
+  origversion: 5.3.6-3.6.1
+  status: legacy
+  summary: Small Embeddable Language with Procedural Syntax
+  licenses:
+    - MIT
+  categories:
+    - Development/Languages/Other
+  vulnerable: true
 - repo: opensuse_leap_15_5
   subrepo: main/oss
   srcname: lua54
@@ -8874,176 +9098,6 @@
   categories:
     - Development/Languages/Other
   vulnerable: true
-- repo: openmandriva_rolling
-  subrepo: main/release
-  srcname: lua5.2
-  binnames:
-    - lua5.2
-    - lib64lua5.2
-    - lib64lua5.2-devel
-    - lib64lua5.2-static-devel
-    - lua5.2-debuginfo
-    - lua5.2-debugsource
-  visiblename: lua5.2
-  version: 5.2.4
-  origversion: 5.2.4-5
-  status: legacy
-  summary: Old version of a powerful, light-weight programming language
-  maintainers:
-    - bero+massbuild@lindev.ch
-  licenses:
-    - MIT
-  categories:
-    - Development/Other
-  vulnerable: true
-- repo: openmandriva_rolling
-  subrepo: main/release
-  srcname: lua5.3
-  binnames:
-    - lua5.3
-    - lib64lua5.3_5.3
-    - lib64lua5.3-devel
-    - lib64lua5.3-static-devel
-    - lua5.3-debuginfo
-    - lua5.3-debugsource
-  visiblename: lua5.3
-  version: 5.3.6
-  origversion: 5.3.6-1
-  status: legacy
-  summary: Powerful, light-weight programming language (old version)
-  maintainers:
-    - bero+massbuild@lindev.ch
-  licenses:
-    - MIT
-  categories:
-    - Development/Other
-  vulnerable: true
-- repo: openmandriva_rolling
-  subrepo: unsupported/release
-  srcname: lua5.1
-  binnames:
-    - lua5.1
-    - lib64lua5.1
-    - lib64lua5.1-devel
-    - lib64lua5.1-static-devel
-    - lua5.1-debuginfo
-    - lua5.1-debugsource
-  visiblename: lua5.1
-  version: 5.1.5
-  origversion: 5.1.5-10
-  status: legacy
-  summary: Powerful, light-weight programming language
-  maintainers:
-    - bero@lindev.ch
-  licenses:
-    - MIT
-  categories:
-    - Development/Other
-  vulnerable: true
-- repo: openmandriva_cooker
-  subrepo: unsupported/release
-  srcname: lua5.1
-  binnames:
-    - lua5.1
-    - lib64lua5.1
-    - lib64lua5.1-devel
-    - lib64lua5.1-static-devel
-    - lua5.1-debuginfo
-    - lua5.1-debugsource
-  visiblename: lua5.1
-  version: 5.1.5
-  origversion: 5.1.5-10
-  status: legacy
-  summary: Powerful, light-weight programming language
-  maintainers:
-    - bero@lindev.ch
-  licenses:
-    - MIT
-  categories:
-    - Development/Other
-  vulnerable: true
-- repo: openmandriva_cooker
-  subrepo: main/release
-  srcname: lua5.2
-  binnames:
-    - lua5.2
-    - lib64lua5.2
-    - lib64lua5.2-devel
-    - lib64lua5.2-static-devel
-    - lua5.2-debuginfo
-    - lua5.2-debugsource
-  visiblename: lua5.2
-  version: 5.2.4
-  origversion: 5.2.4-5
-  status: legacy
-  summary: Old version of a powerful, light-weight programming language
-  maintainers:
-    - bero+massbuild@lindev.ch
-  licenses:
-    - MIT
-  categories:
-    - Development/Other
-  vulnerable: true
-- repo: openmandriva_cooker
-  subrepo: main/release
-  srcname: lua5.3
-  binnames:
-    - lua5.3
-    - lib64lua5.3_5.3
-    - lib64lua5.3-devel
-    - lib64lua5.3-static-devel
-    - lua5.3-debuginfo
-    - lua5.3-debugsource
-  visiblename: lua5.3
-  version: 5.3.6
-  origversion: 5.3.6-1
-  status: legacy
-  summary: Powerful, light-weight programming language (old version)
-  maintainers:
-    - bero+massbuild@lindev.ch
-  licenses:
-    - MIT
-  categories:
-    - Development/Other
-  vulnerable: true
-- repo: openpkg_current
-  srcname: lua51
-  visiblename: lua51
-  version: 5.1.5
-  origversion: null
-  status: legacy
-  summary: LUA Programming Language
-  licenses:
-    - MIT
-  categories:
-    - Language
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: main/oss
-  srcname: lua51
-  visiblename: lua51
-  version: 5.1.5
-  origversion: 5.1.5-2.31
-  status: legacy
-  summary: Small Embeddable Language with Procedural Syntax
-  licenses:
-    - MIT
-  categories:
-    - Development/Languages/Other
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: main/oss
-  srcname: lua53
-  visiblename: lua53
-  version: 5.3.6
-  origversion: 5.3.6-3.6.1
-  status: legacy
-  summary: Small Embeddable Language with Procedural Syntax
-  licenses:
-    - MIT
-  categories:
-    - Development/Languages/Other
-  vulnerable: true
 - repo: opensuse_leap_15_6
   subrepo: main/oss
   srcname: lua51
@@ -9067,6 +9121,19 @@
   summary: Small Embeddable Language with Procedural Syntax
   licenses:
     - MIT
+  categories:
+    - Development/Languages/Other
+  vulnerable: true
+- repo: opensuse_leap_15_6
+  subrepo: main/oss
+  srcname: lua54
+  visiblename: lua54
+  version: 5.4.4
+  origversion: 5.4.4-bp156.2.6
+  status: outdated
+  summary: Small Embeddable Language with Procedural Syntax
+  licenses:
+    - GPL-3.0-or-later
   categories:
     - Development/Languages/Other
   vulnerable: true
@@ -9229,19 +9296,6 @@
 - repo: openwrt_24_10_x86_64
   subrepo: base
   srcname: feeds/base/package/utils/lua
-  binname: lua
-  visiblename: lua
-  version: 5.1.5
-  origversion: 5.1.5-r11
-  status: legacy
-  maintainers:
-    - jo@mein.io
-  categories:
-    - lang
-  vulnerable: true
-- repo: openwrt_24_10_x86_64
-  subrepo: base
-  srcname: feeds/base/package/utils/lua
   binname: luac
   visiblename: luac
   version: 5.1.5
@@ -9325,6 +9379,37 @@
   licenses:
     - MIT
   vulnerable: true
+- repo: parabola
+  subrepo: extra
+  srcname: lua51
+  binname: lua51
+  visiblename: lua51
+  version: 5.1.5
+  origversion: 5.1.5-13
+  status: legacy
+  summary: Powerful lightweight programming language designed for extending applications
+  licenses:
+    - MIT
+  vulnerable: true
+- repo: pardus_21
+  subrepo: main
+  srcname: lua5.1
+  binnames:
+    - lua5.1-doc
+    - lua5.1
+    - liblua5.1-0-dev
+    - liblua5.1-0
+    - liblua5.1-0-dbg
+  visiblename: lua5.1
+  version: 5.1.5
+  origversion: 5.1.5-8.1
+  status: legacy
+  maintainers:
+    - jbelmonte@debian.org
+    - gareuselesinge@debian.org
+  categories:
+    - interpreters
+  vulnerable: true
 - repo: pardus_21
   subrepo: main
   srcname: lua5.2
@@ -9362,26 +9447,8 @@
   categories:
     - misc
   vulnerable: true
-- repo: pardus_21
-  subrepo: main
-  srcname: lua5.4
-  binnames:
-    - lua5.4
-    - liblua5.4-dev
-    - liblua5.4-0
-    - liblua5.4-0-dbg
-  visiblename: lua5.4
-  version: 5.4.2
-  origversion: 5.4.2-2
-  status: outdated
-  maintainers:
-    - pkg-lua-devel@lists.alioth.debian.org
-    - sgolovan@debian.org
-  categories:
-    - misc
-  vulnerable: true
 - repo: parrot
-  subrepo: parrot-updates/main
+  subrepo: parrot/main
   srcname: lua5.1
   binnames:
     - lua5.1-doc
@@ -9399,7 +9466,7 @@
     - interpreters
   vulnerable: true
 - repo: parrot
-  subrepo: parrot-updates/main
+  subrepo: parrot/main
   srcname: lua5.2
   binnames:
     - lua5.2-doc
@@ -9418,7 +9485,7 @@
     - interpreters
   vulnerable: true
 - repo: parrot
-  subrepo: parrot-updates/main
+  subrepo: parrot/main
   srcname: lua5.3
   binnames:
     - lua5.3
@@ -9436,7 +9503,7 @@
     - misc
   vulnerable: true
 - repo: parrot
-  subrepo: parrot/main
+  subrepo: parrot-updates/main
   srcname: lua5.1
   binnames:
     - lua5.1-doc
@@ -9454,7 +9521,7 @@
     - interpreters
   vulnerable: true
 - repo: parrot
-  subrepo: parrot/main
+  subrepo: parrot-updates/main
   srcname: lua5.2
   binnames:
     - lua5.2-doc
@@ -9473,7 +9540,7 @@
     - interpreters
   vulnerable: true
 - repo: parrot
-  subrepo: parrot/main
+  subrepo: parrot-updates/main
   srcname: lua5.3
   binnames:
     - lua5.3
@@ -9666,13 +9733,6 @@
     - pkgsrc-users@netbsd.org
   categories:
     - lang
-  vulnerable: true
-- repo: pld
-  srcname: lua51
-  visiblename: lua51
-  version: 5.1.5
-  origversion: 5.1.5-8
-  status: legacy
   vulnerable: true
 - repo: pld
   srcname: lua52
@@ -10129,21 +10189,6 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: solus
-  srcname: lua51
-  binname: lua51-devel
-  visiblename: lua51-devel
-  version: 5.1.5
-  origversion: null
-  status: legacy
-  summary: Development files for lua51
-  maintainers:
-    - uni.dos12@outlook.com
-  licenses:
-    - MIT
-  categories:
-    - programming.devel
-  vulnerable: true
 - repo: rosa_2019_1
   subrepo: main/release
   srcname: lua
@@ -10331,6 +10376,21 @@
   categories:
     - debug
   vulnerable: true
+- repo: solus
+  srcname: lua51
+  binname: lua51-devel
+  visiblename: lua51-devel
+  version: 5.1.5
+  origversion: null
+  status: legacy
+  summary: Development files for lua51
+  maintainers:
+    - uni.dos12@outlook.com
+  licenses:
+    - MIT
+  categories:
+    - programming.devel
+  vulnerable: true
 - repo: t2
   srcname: lua51
   visiblename: lua51
@@ -10378,55 +10438,6 @@
   maintainers:
     - termux@github
   vulnerable: true
-- repo: ubuntu_16_04
-  subrepo: xenial/main
-  srcname: lua5.3
-  binnames:
-    - lua5.3
-    - liblua5.3-dev
-    - liblua5.3-0
-    - liblua5.3-0-dbg
-  visiblename: lua5.3
-  version: 5.3.1
-  origversion: 5.3.1-1ubuntu2
-  status: outdated
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-  categories:
-    - misc
-  vulnerable: true
-- repo: ubi_8
-  subrepo: baseos
-  srcname: lua
-  visiblename: lua
-  version: 5.3.4
-  origversion: 5.3.4-12.el8
-  status: outdated
-  summary: Powerful light-weight programming language
-  licenses:
-    - MIT
-  categories:
-    - Development/Languages
-  vulnerable: true
-- repo: ubuntu_14_04
-  subrepo: trusty-updates/main
-  srcname: lua5.1
-  binnames:
-    - lua5.1-doc
-    - lua5.1
-    - liblua5.1-0-dev
-    - liblua5.1-0
-    - liblua5.1-0-dbg
-  visiblename: lua5.1
-  version: 5.1.5
-  origversion: 5.1.5-5ubuntu0.1
-  status: legacy
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - gareuselesinge@debian.org
-  categories:
-    - interpreters
-  vulnerable: true
 - repo: ubuntu_14_04
   subrepo: trusty/main
   srcname: lua5.1
@@ -10465,22 +10476,24 @@
   categories:
     - interpreters
   vulnerable: true
-- repo: ubuntu_16_04
-  subrepo: xenial-updates/main
-  srcname: lua5.3
+- repo: ubuntu_14_04
+  subrepo: trusty-updates/main
+  srcname: lua5.1
   binnames:
-    - lua5.3
-    - liblua5.3-dev
-    - liblua5.3-0
-    - liblua5.3-0-dbg
-  visiblename: lua5.3
-  version: 5.3.1
-  origversion: 5.3.1-1ubuntu2.1
-  status: outdated
+    - lua5.1-doc
+    - lua5.1
+    - liblua5.1-0-dev
+    - liblua5.1-0
+    - liblua5.1-0-dbg
+  visiblename: lua5.1
+  version: 5.1.5
+  origversion: 5.1.5-5ubuntu0.1
+  status: legacy
   maintainers:
     - ubuntu-devel-discuss@lists.ubuntu.com
+    - gareuselesinge@debian.org
   categories:
-    - misc
+    - interpreters
   vulnerable: true
 - repo: ubuntu_16_04
   subrepo: xenial/main
@@ -10520,27 +10533,8 @@
   categories:
     - interpreters
   vulnerable: true
-- repo: ubuntu_18_04
-  subrepo: bionic/universe
-  srcname: lua5.1
-  binnames:
-    - lua5.1-doc
-    - lua5.1
-    - liblua5.1-0-dev
-    - liblua5.1-0
-    - liblua5.1-0-dbg
-  visiblename: lua5.1
-  version: 5.1.5
-  origversion: 5.1.5-8.1build2
-  status: legacy
-  maintainers:
-    - jbelmonte@debian.org
-    - gareuselesinge@debian.org
-  categories:
-    - universe/interpreters
-  vulnerable: true
-- repo: ubuntu_18_04
-  subrepo: bionic-updates/main
+- repo: ubuntu_16_04
+  subrepo: xenial/main
   srcname: lua5.3
   binnames:
     - lua5.3
@@ -10548,12 +10542,28 @@
     - liblua5.3-0
     - liblua5.3-0-dbg
   visiblename: lua5.3
-  version: 5.3.3
-  origversion: 5.3.3-1ubuntu0.18.04.1
+  version: 5.3.1
+  origversion: 5.3.1-1ubuntu2
   status: outdated
   maintainers:
     - ubuntu-devel-discuss@lists.ubuntu.com
-    - ondrej@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: ubuntu_16_04
+  subrepo: xenial-updates/main
+  srcname: lua5.3
+  binnames:
+    - lua5.3
+    - liblua5.3-dev
+    - liblua5.3-0
+    - liblua5.3-0-dbg
+  visiblename: lua5.3
+  version: 5.3.1
+  origversion: 5.3.1-1ubuntu2.1
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
   categories:
     - misc
   vulnerable: true
@@ -10594,8 +10604,8 @@
   categories:
     - misc
   vulnerable: true
-- repo: ubuntu_20_04
-  subrepo: focal/universe
+- repo: ubuntu_18_04
+  subrepo: bionic/universe
   srcname: lua5.1
   binnames:
     - lua5.1-doc
@@ -10605,13 +10615,31 @@
     - liblua5.1-0-dbg
   visiblename: lua5.1
   version: 5.1.5
-  origversion: 5.1.5-8.1build4
+  origversion: 5.1.5-8.1build2
   status: legacy
   maintainers:
     - jbelmonte@debian.org
     - gareuselesinge@debian.org
   categories:
     - universe/interpreters
+  vulnerable: true
+- repo: ubuntu_18_04
+  subrepo: bionic-updates/main
+  srcname: lua5.3
+  binnames:
+    - lua5.3
+    - liblua5.3-dev
+    - liblua5.3-0
+    - liblua5.3-0-dbg
+  visiblename: lua5.3
+  version: 5.3.3
+  origversion: 5.3.3-1ubuntu0.18.04.1
+  status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - ondrej@debian.org
+  categories:
+    - misc
   vulnerable: true
 - repo: ubuntu_20_04
   subrepo: focal/main
@@ -10644,6 +10672,43 @@
   version: 5.3.3
   origversion: 5.3.3-1.1ubuntu2
   status: outdated
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - ondrej@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: ubuntu_20_04
+  subrepo: focal/universe
+  srcname: lua5.1
+  binnames:
+    - lua5.1-doc
+    - lua5.1
+    - liblua5.1-0-dev
+    - liblua5.1-0
+    - liblua5.1-0-dbg
+  visiblename: lua5.1
+  version: 5.1.5
+  origversion: 5.1.5-8.1build4
+  status: legacy
+  maintainers:
+    - jbelmonte@debian.org
+    - gareuselesinge@debian.org
+  categories:
+    - universe/interpreters
+  vulnerable: true
+- repo: ubuntu_22_04
+  subrepo: jammy/main
+  srcname: lua5.3
+  binnames:
+    - lua5.3
+    - liblua5.3-dev
+    - liblua5.3-0
+    - liblua5.3-0-dbg
+  visiblename: lua5.3
+  version: 5.3.6
+  origversion: 5.3.6-1build1
+  status: legacy
   maintainers:
     - ubuntu-devel-discuss@lists.ubuntu.com
     - ondrej@debian.org
@@ -10705,24 +10770,6 @@
     - sgolovan@debian.org
   categories:
     - universe/misc
-  vulnerable: true
-- repo: ubuntu_22_04
-  subrepo: jammy/main
-  srcname: lua5.3
-  binnames:
-    - lua5.3
-    - liblua5.3-dev
-    - liblua5.3-0
-    - liblua5.3-0-dbg
-  visiblename: lua5.3
-  version: 5.3.6
-  origversion: 5.3.6-1build1
-  status: legacy
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - ondrej@debian.org
-  categories:
-    - misc
   vulnerable: true
 - repo: ubuntu_24_04
   subrepo: noble/universe
@@ -10998,6 +11045,60 @@
   categories:
     - universe/misc
   vulnerable: true
+- repo: ubuntu_27_04
+  subrepo: tenacious/universe
+  srcname: lua5.1
+  binnames:
+    - lua5.1-doc
+    - lua5.1
+    - liblua5.1-0-dev
+    - liblua5.1-0
+  visiblename: lua5.1
+  version: 5.1.5
+  origversion: 5.1.5-12
+  status: legacy
+  maintainers:
+    - pkg-lua-devel@lists.alioth.debian.org
+    - bage@debian.org
+  categories:
+    - universe/interpreters
+  vulnerable: true
+- repo: ubuntu_27_04
+  subrepo: tenacious/universe
+  srcname: lua5.2
+  binnames:
+    - lua5.2-doc
+    - lua5.2
+    - liblua5.2-dev
+    - liblua5.2-0
+  visiblename: lua5.2
+  version: 5.2.4
+  origversion: 5.2.4-4
+  status: legacy
+  maintainers:
+    - pkg-lua-devel@lists.alioth.debian.org
+    - jbelmonte@debian.org
+    - vseva@debian.org
+  categories:
+    - universe/interpreters
+  vulnerable: true
+- repo: ubuntu_27_04
+  subrepo: tenacious/universe
+  srcname: lua5.3
+  binnames:
+    - lua5.3
+    - liblua5.3-dev
+    - liblua5.3-0
+  visiblename: lua5.3
+  version: 5.3.6
+  origversion: 5.3.6-5
+  status: legacy
+  maintainers:
+    - pkg-lua-devel@lists.alioth.debian.org
+    - ondrej@debian.org
+  categories:
+    - universe/misc
+  vulnerable: true
 - repo: void_x86_64
   subrepo: x86_64
   srcname: lua53
@@ -11162,22 +11263,6 @@
   srcname: lua
   visiblename: lua
   version: 5.4.2
-  origversion: null
-  status: legacy
-  summary: A powerful, efficient, lightweight, embeddable scripting language.
-  vulnerable: true
-- repo: xrepo
-  srcname: lua
-  visiblename: lua
-  version: 5.4.3
-  origversion: null
-  status: legacy
-  summary: A powerful, efficient, lightweight, embeddable scripting language.
-  vulnerable: true
-- repo: xrepo
-  srcname: lua
-  visiblename: lua
-  version: 5.4.4
   origversion: null
   status: legacy
   summary: A powerful, efficient, lightweight, embeddable scripting language.
