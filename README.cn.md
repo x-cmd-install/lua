@@ -47,7 +47,7 @@ x install lua
 
 ## 流行度
 
-- **Star**: 10,449 · **Fork**: 2,029 · **开放 issue**: 0 · **贡献者**: 6
+- **Star**: 10,451 · **Fork**: 2,029 · **开放 issue**: 0 · **贡献者**: 6
 
 ## 累计统计
 
@@ -57,28 +57,28 @@ x install lua
 
 | 时间窗口 | 起始 | 发布 | 已合并 PR | 开放 PR | 已关闭 issue | 开放 issue | 提交 |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-17 | 0 | 0 | 0 | 0 | 0 | 1 |
-| last60d | 2026-09-17 | 0 | 0 | 0 | 0 | 0 | 8 |
-| 90d | 2026-08-18 | 0 | 0 | 0 | 0 | 0 | 14 |
-| last180d | 2026-05-20 | 1 | 0 | 0 | 0 | 0 | 23 |
-| 360d | 2025-11-21 | 2 | 0 | 0 | 0 | 0 | 62 |
-| last720d | 2024-11-26 | 3 | 0 | 0 | 0 | 0 | 207 |
+| 30d | 2026-10-18 | 0 | 0 | 0 | 0 | 0 | 1 |
+| last60d | 2026-09-18 | 0 | 0 | 0 | 0 | 0 | 8 |
+| 90d | 2026-08-19 | 0 | 0 | 0 | 0 | 0 | 14 |
+| last180d | 2026-05-21 | 1 | 0 | 0 | 0 | 0 | 23 |
+| 360d | 2025-11-22 | 2 | 0 | 0 | 0 | 0 | 62 |
+| last720d | 2024-11-27 | 3 | 0 | 0 | 0 | 0 | 207 |
 
 ## 发行版状态
 
-在 [repology.org](https://repology.org/project/lua) 上共有 **798** 个发行版报告此项目。**52** 个 ✅ 已是最新上游版本，**225** 个 ⚠️ 使用旧版本。
+在 [repology.org](https://repology.org/project/lua) 上共有 **800** 个发行版报告此项目。**53** 个 ✅ 已是最新上游版本，**225** 个 ⚠️ 使用旧版本。
 
 | 发行版 | 版本 | 状态 |
 |--------|------|------|
 | Debian unstable | `5.4.9` | 🪦 legacy |
 | Debian 14 | `5.4.9` | 🪦 legacy |
 | Debian 13 | `5.4.7` | ⚠️ outdated |
-| Ubuntu 26.04 LTS | `5.5.0` | ⚠️ outdated |
+| Ubuntu 26.04 LTS | `5.4.8` | ⚠️ outdated |
 | Ubuntu 24.04 LTS | `5.4.6` | ⚠️ outdated |
 | Arch | `5.5.1` | ✅ latest |
 | Homebrew | `5.5.1` | ✅ latest |
 | Fedora rawhide | `5.5.1` | ✅ latest |
-| Nix unstable | `0.10.31` | 🪦 legacy |
+| Nix unstable | `5.4.9` | 🪦 legacy |
 | Void | `5.4.9` | 🪦 legacy |
 | Alpine edge | `5.4.9` | 🪦 legacy |
 | openSUSE Tumbleweed | `5.4.8` | ⚠️ outdated |
@@ -92,4 +92,4 @@ lua 的安装元数据由 [x-cmd/install](https://github.com/x-cmd/install) 索�
 
 本页面的数据（card / loc / scorecard / release）由 [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) 自动采集，每日重新生成。**安装行为**（版本选择、平台差异、依赖处理）的改进应提交到上游索引。
 
-_数据快照: `data/card/261116.yml` · 2026-11-16T06:03:14Z._
+_数据快照: `data/card/261117.yml` · 2026-11-17T07:41:43Z._
