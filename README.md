@@ -47,7 +47,7 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 10,482 · **Forks**: 2,031 · **Open issues**: 0 · **Contributors**: 6
+- **Stars**: 10,485 · **Forks**: 2,032 · **Open issues**: 0 · **Contributors**: 6
 
 ## Totals (cumulative)
 
@@ -57,31 +57,12 @@ Lowest-scoring checks:
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-26 | 0 | 0 | 0 | 0 | 0 | 1 |
-| last60d | 2026-09-26 | 0 | 0 | 0 | 0 | 0 | 8 |
-| 90d | 2026-08-27 | 0 | 0 | 0 | 0 | 0 | 13 |
-| last180d | 2026-05-29 | 1 | 0 | 0 | 0 | 0 | 22 |
-| 360d | 2025-11-30 | 2 | 0 | 0 | 0 | 0 | 60 |
-| last720d | 2024-12-05 | 3 | 0 | 0 | 0 | 0 | 202 |
-
-## Distribution status
-
-Reported by **793** distros on [repology.org](https://repology.org/project/lua). **56** are ✅ on the latest upstream release, **222** are ⚠️ on an older version.
-
-| Distro | Version | Status |
-|--------|---------|--------|
-| Debian unstable | `5.4.9` | 🪦 legacy |
-| Debian 14 | `5.4.9` | 🪦 legacy |
-| Debian 13 | `5.4.7` | ⚠️ outdated |
-| Ubuntu 26.04 LTS | `5.4.8` | ⚠️ outdated |
-| Ubuntu 24.04 LTS | `5.4.6` | ⚠️ outdated |
-| Arch | `5.5.1` | ✅ latest |
-| Homebrew | `5.5.1` | ✅ latest |
-| Fedora rawhide | `5.5.1` | ✅ latest |
-| Nix unstable | `5.4.9` | 🪦 legacy |
-| Void | `5.4.9` | 🪦 legacy |
-| Alpine edge | `5.4.9` | 🪦 legacy |
-| openSUSE Tumbleweed | `5.4.8` | ⚠️ outdated |
+| 30d | 2026-10-27 | 0 | 0 | 0 | 0 | 0 | 1 |
+| last60d | 2026-09-27 | 0 | 0 | 0 | 0 | 0 | 8 |
+| 90d | 2026-08-28 | 0 | 0 | 0 | 0 | 0 | 13 |
+| last180d | 2026-05-30 | 1 | 0 | 0 | 0 | 0 | 22 |
+| 360d | 2025-12-01 | 2 | 0 | 0 | 0 | 0 | 60 |
+| last720d | 2024-12-06 | 3 | 0 | 0 | 0 | 0 | 200 |
 
 ## Improve this data
 
@@ -92,4 +73,4 @@ Install metadata for lua lives in the [x-cmd/install](https://github.com/x-cmd/i
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261125.yml` · 2026-11-25T08:08:24Z._
+_Snapshot: `data/card/261126.yml` · 2026-11-26T07:57:47Z._

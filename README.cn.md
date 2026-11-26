@@ -47,7 +47,7 @@ x install lua
 
 ## 流行度
 
-- **Star**: 10,482 · **Fork**: 2,031 · **开放 issue**: 0 · **贡献者**: 6
+- **Star**: 10,485 · **Fork**: 2,032 · **开放 issue**: 0 · **贡献者**: 6
 
 ## 累计统计
 
@@ -57,31 +57,12 @@ x install lua
 
 | 时间窗口 | 起始 | 发布 | 已合并 PR | 开放 PR | 已关闭 issue | 开放 issue | 提交 |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-26 | 0 | 0 | 0 | 0 | 0 | 1 |
-| last60d | 2026-09-26 | 0 | 0 | 0 | 0 | 0 | 8 |
-| 90d | 2026-08-27 | 0 | 0 | 0 | 0 | 0 | 13 |
-| last180d | 2026-05-29 | 1 | 0 | 0 | 0 | 0 | 22 |
-| 360d | 2025-11-30 | 2 | 0 | 0 | 0 | 0 | 60 |
-| last720d | 2024-12-05 | 3 | 0 | 0 | 0 | 0 | 202 |
-
-## 发行版状态
-
-在 [repology.org](https://repology.org/project/lua) 上共有 **793** 个发行版报告此项目。**56** 个 ✅ 已是最新上游版本，**222** 个 ⚠️ 使用旧版本。
-
-| 发行版 | 版本 | 状态 |
-|--------|------|------|
-| Debian unstable | `5.4.9` | 🪦 legacy |
-| Debian 14 | `5.4.9` | 🪦 legacy |
-| Debian 13 | `5.4.7` | ⚠️ outdated |
-| Ubuntu 26.04 LTS | `5.4.8` | ⚠️ outdated |
-| Ubuntu 24.04 LTS | `5.4.6` | ⚠️ outdated |
-| Arch | `5.5.1` | ✅ latest |
-| Homebrew | `5.5.1` | ✅ latest |
-| Fedora rawhide | `5.5.1` | ✅ latest |
-| Nix unstable | `5.4.9` | 🪦 legacy |
-| Void | `5.4.9` | 🪦 legacy |
-| Alpine edge | `5.4.9` | 🪦 legacy |
-| openSUSE Tumbleweed | `5.4.8` | ⚠️ outdated |
+| 30d | 2026-10-27 | 0 | 0 | 0 | 0 | 0 | 1 |
+| last60d | 2026-09-27 | 0 | 0 | 0 | 0 | 0 | 8 |
+| 90d | 2026-08-28 | 0 | 0 | 0 | 0 | 0 | 13 |
+| last180d | 2026-05-30 | 1 | 0 | 0 | 0 | 0 | 22 |
+| 360d | 2025-12-01 | 2 | 0 | 0 | 0 | 0 | 60 |
+| last720d | 2024-12-06 | 3 | 0 | 0 | 0 | 0 | 200 |
 
 ## 改进这些数据
 
@@ -92,4 +73,4 @@ lua 的安装元数据由 [x-cmd/install](https://github.com/x-cmd/install) 索�
 
 本页面的数据（card / loc / scorecard / release）由 [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) 自动采集，每日重新生成。**安装行为**（版本选择、平台差异、依赖处理）的改进应提交到上游索引。
 
-_数据快照: `data/card/261125.yml` · 2026-11-25T08:08:24Z._
+_数据快照: `data/card/261126.yml` · 2026-11-26T07:57:48Z._
