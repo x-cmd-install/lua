@@ -2,103 +2,103 @@ about:
   description: "A copy of the Lua development repository, as seen by the Lua team. Mirrored irregularly. All communication should be through the Lua mailing list https://www.lua.org/lua-l.html"
   license: NOASSERTION
   homepage: https://lua.org
-  head: c42d820
+  head: 361c090
   archived: false
   latestVersion: "v5.5.1"
   latestRelease: "v5.5.1"
   latestPrerelease: "5.3.3-rc3"
-  collectedAt: 2026-11-27T07:58:44Z
+  collectedAt: 2026-11-28T07:28:39Z
 timeline:
   created: 2012-09-14
-  lastCommit: 2026-11-06
+  lastCommit: 2026-11-26
   lastVersion: 2026-08-05
   lastRelease: 2026-08-05
   lastPrerelease: 2016-10-03
 popularity:
   star: 10487
   watcher: 411
-  fork: 2032
+  fork: 2033
   release: 128
   contributor: 6
   pullRequest: 0
   issue: 0
 language:
-  C: 1004604
-  Lua: 502062
+  C: 1005429
+  Lua: 503344
   Makefile: 8795
-totalBytes: 1515461
+totalBytes: 1517568
 recent:
   last30d:
-    since: 2026-10-28
-    release: 0
-    mergedPR: 0
-    openPR: 0
-    closedIssue: 0
-    openIssue: 0
-    commit: 1
-  last60d:
-    since: 2026-09-28
+    since: 2026-10-29
     release: 0
     mergedPR: 0
     openPR: 0
     closedIssue: 0
     openIssue: 0
     commit: 8
-  last90d:
-    since: 2026-08-29
+  last60d:
+    since: 2026-09-29
     release: 0
     mergedPR: 0
     openPR: 0
     closedIssue: 0
     openIssue: 0
-    commit: 13
+    commit: 15
+  last90d:
+    since: 2026-08-30
+    release: 0
+    mergedPR: 0
+    openPR: 0
+    closedIssue: 0
+    openIssue: 0
+    commit: 20
   last180d:
-    since: 2026-05-31
+    since: 2026-06-01
     release: 1
     mergedPR: 0
     openPR: 0
     closedIssue: 0
     openIssue: 0
-    commit: 22
+    commit: 29
   last360d:
-    since: 2025-12-02
+    since: 2025-12-03
     release: 2
     mergedPR: 0
     openPR: 0
     closedIssue: 0
     openIssue: 0
-    commit: 60
+    commit: 67
   last720d:
-    since: 2024-12-07
+    since: 2024-12-08
     release: 3
     mergedPR: 0
     openPR: 0
     closedIssue: 0
     openIssue: 0
-    commit: 200
+    commit: 207
 total:
   release: 128
   mergedPR: 0
   openPR: 0
   closedIssue: 0
   openIssue: 0
-  commit: 5869
+  commit: 5876
 ---
 path: /home/runner/.x-repo/github.com/lua/lua
-collectedAt: 2026-11-27T07:58:47Z
+collectedAt: 2026-11-28T07:28:43Z
 loc:
   C:
-    code: 20330
-    comments: 4274
-    blanks: 3665
+    code: 20351
+    comments: 4278
+    blanks: 3678
     files: 40
   Lua:
-    code: 13734
-    comments: 1210
-    blanks: 3203
+    code: 13761
+    comments: 1215
+    blanks: 3213
     files: 34
   CHeader:
-    code: 2764
+    code: 2765
     comments: 1716
     blanks: 1467
     files: 28
@@ -113,9 +113,9 @@ loc:
     blanks: 3
     files: 1
 total:
-  code: 36983
-  comments: 7253
-  blanks: 8385
+  code: 37032
+  comments: 7262
+  blanks: 8408
   files: 105
 ---
 date: "2026-11-09"
